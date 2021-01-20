@@ -21,7 +21,7 @@ namespace WytwarzanieOprogramowania
         public static int[] dectobin(int n) {
             int i;
             int[] a = new int[10];
-         
+
             for (i = 0; n > 0; i++)
             {
                 /*bity sa zapisywane od tyłu w każdej konwersji*/
@@ -60,9 +60,9 @@ namespace WytwarzanieOprogramowania
         public static int bintodec(int[] n)
         {
             int i;
-            int a=0;
+            int a = 0;
             int rozmiar = n.Length;
-            for (i = 0; i<rozmiar; i++)
+            for (i = 0; i < rozmiar; i++)
             {
                 a += n[i] * 2 ^ i;
             }
@@ -73,7 +73,7 @@ namespace WytwarzanieOprogramowania
             int i;
             int a = 0;
             int rozmiar = n.Length;
-            for (i = 0; i<rozmiar; i++)
+            for (i = 0; i < rozmiar; i++)
             {
                 a += n[i] * 8 ^ i;
             }
@@ -91,7 +91,7 @@ namespace WytwarzanieOprogramowania
             }
             return a;
         }
-        /*(a i b to liczby decymalne bitowe hex i okt zapisane jako int*/ 
+        /*(a i b to liczby decymalne bitowe hex i okt zapisane jako int*/
         public static int OR(int a, int b) => a | b;
         public static int AND(int a, int b) => a & b;
         public static int XOR(int a, int b) => a ^ b;
@@ -99,6 +99,20 @@ namespace WytwarzanieOprogramowania
         /*(a  to liczba decymalna bitowa hex i okt zapisana jako int a b  to o ile bitów przesuwamy*/
         public static int Lsh(int a, int b) => a << b;
         public static int Rsh(int a, int b) => a >> b;
+
+        /* nowe rzeczy */
+        public static int PlusMinus(int a) => -1 * a;
+        public static int Modulo(int a, int b) => a % b;
+        public static int Rol(int a) => a << 1;
+        public static int Ror(int a) => a >> 1;
+       /* public static int CE(int a) =>; Skasowanie ostatniej liczby
+        public static Backspace() =>;Skasowanie ostatniego znaku (operacje sie nie licza)
+        public static MR(int pamiec)=>; Wyswietlenie pamieci
+             */
+        public static int C(int a)=> a = 0;
+        public static int Mplus(int a ,int pamiec) => pamiec + a;
+        public static int Mminus(int a, int pamiec) => pamiec - a;
+        public static int MC(int pamiec) => pamiec = 0;
     }
 
 }
