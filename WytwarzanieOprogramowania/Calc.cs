@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WytwarzanieOprogramowania
 {
-    class Calc
+    public class Calc
     {
         public static int Add(int a, int b) => a + b;
         public static int Sub(int a, int b) => a - b;
