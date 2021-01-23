@@ -10,11 +10,7 @@ using System.Windows.Forms;
 
 namespace Calculator
 {
-    class Oper
-    {
-        string sym = "0";
-        byte weight = 1;
-    }
+   
 
     public partial class Form1 : Form
     {
@@ -27,6 +23,8 @@ namespace Calculator
         public Form1()
         {
             InitializeComponent();
+            DEC.Select();
+            radioButton6.Select();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -34,7 +32,11 @@ namespace Calculator
 
         }
 
-      
+        class Oper
+        {
+            string sym = "0";
+            byte weight = 1;
+        }
 
         private void jeden_Click(object sender, EventArgs e)
         {
@@ -269,11 +271,6 @@ namespace Calculator
         
     }
 
-        private void RoL_Click(object sender, EventArgs e)
-        {
-
-        }
-
        
 
         private void BIN_CheckedChanged(object sender, EventArgs e)
@@ -368,7 +365,22 @@ namespace Calculator
 
         private void strzalka_Click(object sender, EventArgs e)
         {
+           string Result;
+            if (textBox2.Text.Length > 1) { Result = WytwarzanieOprogramowania.Calc.Backspace(textBox2.Text); textBox2.Text = Convert.ToString(Result); }
+            else if (textBox2.Text.Length == 1) { textBox2.Text = "0"; }
 
         }
+
+        private void Ror_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void RoL_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
     }
 }

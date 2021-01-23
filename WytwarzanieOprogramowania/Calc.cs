@@ -35,10 +35,7 @@ namespace WytwarzanieOprogramowania
         public static short Divide(short a, short b) => (short)(a / b);
         public static sbyte Divide(sbyte a, sbyte b) => (sbyte)(a / b);
         public static double Divide(double a, double b) => a / b;
-        
-        
-        
-        
+       
         /*konwersja na inny system  */
         public static string convert(long n, int sys) => Convert.ToString(n, sys);
         public static string convert(int n, int sys) => Convert.ToString(n, sys);
@@ -83,9 +80,24 @@ namespace WytwarzanieOprogramowania
 
         /* nowe rzeczy */
         public static long PlusMinus(long a) => -1 * a;
+        public static long PlusMinus(int a) => -1 * a;
+        public static long PlusMinus(short a) => -1 * a;
+        public static long PlusMinus(sbyte a) => -1 * a;
+
         public static long Modulo(long a, long b) => a % b;
+        public static long Modulo(int a, int b) => a % b;
+        public static long Modulo(short a, short b) => a % b;
+        public static long Modulo(sbyte a, sbyte b) => a % b;
+
         public static long Rol(long a) => a << 1;
         public static long Ror(long a) => a >> 1;
+        public static long Rol(int a) => a << 1;
+        public static long Ror(int a) => a >> 1;
+        public static long Rol(short a) => a << 1;
+        public static long Ror(short a) => a >> 1;
+        public static long Rol(sbyte a) => a << 1;
+        public static long Ror(sbyte a) => a >> 1;
+
         public static long pamiec;
         public static long word=0;
         public static string text;
@@ -94,14 +106,22 @@ namespace WytwarzanieOprogramowania
         public static long Mminus(long a, long pamiec) => pamiec - a;
         public static long MC(long pamiec) => pamiec = 0;
 
-        public static void Backspace(string text) => text=text.Substring(0, text.Length - 1); 
-        public static void CE(string text) => text="0";
-        public static void MR(long pamiec) => text =Convert.ToString(pamiec);
-        public static void Byte() => word = 8;
-        public static void Word() => word = 16;
-        public static void QWord() => word = 64;
-        public static void DWord() => word = 32;
-
+        public static string Backspace(string text) => text=text.Substring(0, text.Length - 1); 
+        public static string CE(string text) => text="0";
+        public static string MR(long pamiec) => text =Convert.ToString(pamiec);
+        public static sbyte Byte(long b) => Convert.ToSByte(b);
+        public static sbyte Byte(int b) => Convert.ToSByte(b);
+        public static sbyte Byte(short b) => Convert.ToSByte(b);
+        public static short Word(long b) => Convert.ToInt16(b) ;
+        public static short Word(int b) => Convert.ToInt16(b);
+        public static short Word(sbyte b) => Convert.ToInt16(b);
+        public static int DWord(long b) => Convert.ToInt32(b);
+        public static int DWord(short b) => Convert.ToInt32(b);
+        public static int DWord(sbyte b) => Convert.ToInt32(b);
+        public static long QWord(int b) => Convert.ToInt64(b);
+        public static long QWord(short b) => Convert.ToInt64(b);
+        public static long QWord(sbyte b) => Convert.ToInt64(b);
+       
 
 
     }

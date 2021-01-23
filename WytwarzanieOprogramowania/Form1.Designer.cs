@@ -35,7 +35,7 @@ namespace Calculator
         /// Metoda wymagana do obsługi projektanta — nie należy modyfikować
         /// jej zawartości w edytorze kodu.
         /// </summary>
-        public   void InitializeComponent()
+        public void InitializeComponent()
         {
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.Lnawias = new System.Windows.Forms.Button();
@@ -94,18 +94,21 @@ namespace Calculator
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.button9 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox2
             // 
+            this.textBox2.AllowDrop = true;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox2.Location = new System.Drawing.Point(2, 12);
+            this.textBox2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.textBox2.HideSelection = false;
+            this.textBox2.Location = new System.Drawing.Point(12, 12);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(438, 67);
+            this.textBox2.Size = new System.Drawing.Size(428, 67);
             this.textBox2.TabIndex = 0;
             this.textBox2.Text = "0";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -375,6 +378,7 @@ namespace Calculator
             // 
             // siedem
             // 
+            this.siedem.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.siedem.Location = new System.Drawing.Point(211, 163);
             this.siedem.Name = "siedem";
             this.siedem.Size = new System.Drawing.Size(41, 31);
@@ -385,6 +389,7 @@ namespace Calculator
             // 
             // osiem
             // 
+            this.osiem.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.osiem.Location = new System.Drawing.Point(258, 163);
             this.osiem.Name = "osiem";
             this.osiem.Size = new System.Drawing.Size(41, 31);
@@ -395,6 +400,10 @@ namespace Calculator
             // 
             // dziewiec
             // 
+            this.dziewiec.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.dziewiec.FlatAppearance.BorderSize = 0;
+            this.dziewiec.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(204)))), ((int)(((byte)(135)))));
+            this.dziewiec.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(198)))));
             this.dziewiec.Location = new System.Drawing.Point(305, 163);
             this.dziewiec.Name = "dziewiec";
             this.dziewiec.Size = new System.Drawing.Size(41, 31);
@@ -544,7 +553,7 @@ namespace Calculator
             // BIN
             // 
             this.BIN.AutoSize = true;
-            this.BIN.Location = new System.Drawing.Point(11, 19);
+            this.BIN.Location = new System.Drawing.Point(4, 19);
             this.BIN.Name = "BIN";
             this.BIN.Size = new System.Drawing.Size(43, 17);
             this.BIN.TabIndex = 54;
@@ -556,7 +565,7 @@ namespace Calculator
             // OCT
             // 
             this.OCT.AutoSize = true;
-            this.OCT.Location = new System.Drawing.Point(11, 41);
+            this.OCT.Location = new System.Drawing.Point(4, 40);
             this.OCT.Name = "OCT";
             this.OCT.Size = new System.Drawing.Size(47, 17);
             this.OCT.TabIndex = 55;
@@ -568,7 +577,7 @@ namespace Calculator
             // DEC
             // 
             this.DEC.AutoSize = true;
-            this.DEC.Location = new System.Drawing.Point(11, 59);
+            this.DEC.Location = new System.Drawing.Point(4, 61);
             this.DEC.Name = "DEC";
             this.DEC.Size = new System.Drawing.Size(47, 17);
             this.DEC.TabIndex = 56;
@@ -580,7 +589,7 @@ namespace Calculator
             // HEX
             // 
             this.HEX.AutoSize = true;
-            this.HEX.Location = new System.Drawing.Point(11, 82);
+            this.HEX.Location = new System.Drawing.Point(4, 82);
             this.HEX.Name = "HEX";
             this.HEX.Size = new System.Drawing.Size(47, 17);
             this.HEX.TabIndex = 57;
@@ -592,9 +601,10 @@ namespace Calculator
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(6, 7);
+            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.radioButton5.Location = new System.Drawing.Point(4, 8);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(68, 17);
+            this.radioButton5.Size = new System.Drawing.Size(55, 13);
             this.radioButton5.TabIndex = 58;
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "QWORD";
@@ -606,9 +616,9 @@ namespace Calculator
             this.groupBox1.Controls.Add(this.OCT);
             this.groupBox1.Controls.Add(this.HEX);
             this.groupBox1.Controls.Add(this.DEC);
-            this.groupBox1.Location = new System.Drawing.Point(2, 88);
+            this.groupBox1.Location = new System.Drawing.Point(12, 88);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(64, 111);
+            this.groupBox1.Size = new System.Drawing.Size(56, 111);
             this.groupBox1.TabIndex = 59;
             this.groupBox1.TabStop = false;
             // 
@@ -618,18 +628,19 @@ namespace Calculator
             this.groupBox2.Controls.Add(this.radioButton7);
             this.groupBox2.Controls.Add(this.radioButton6);
             this.groupBox2.Controls.Add(this.radioButton5);
-            this.groupBox2.Location = new System.Drawing.Point(-6, 200);
+            this.groupBox2.Location = new System.Drawing.Point(12, 200);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(72, 111);
+            this.groupBox2.Size = new System.Drawing.Size(56, 111);
             this.groupBox2.TabIndex = 60;
             this.groupBox2.TabStop = false;
             // 
             // radioButton8
             // 
             this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(11, 83);
+            this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.radioButton8.Location = new System.Drawing.Point(4, 83);
             this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(51, 17);
+            this.radioButton8.Size = new System.Drawing.Size(46, 16);
             this.radioButton8.TabIndex = 61;
             this.radioButton8.TabStop = true;
             this.radioButton8.Text = "BAJT";
@@ -638,9 +649,10 @@ namespace Calculator
             // radioButton7
             // 
             this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(8, 57);
+            this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.radioButton7.Location = new System.Drawing.Point(4, 58);
             this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(60, 17);
+            this.radioButton7.Size = new System.Drawing.Size(53, 16);
             this.radioButton7.TabIndex = 60;
             this.radioButton7.TabStop = true;
             this.radioButton7.Text = "WORD";
@@ -649,17 +661,28 @@ namespace Calculator
             // radioButton6
             // 
             this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(4, 30);
+            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.radioButton6.Location = new System.Drawing.Point(4, 33);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(68, 17);
+            this.radioButton6.Size = new System.Drawing.Size(55, 13);
             this.radioButton6.TabIndex = 59;
             this.radioButton6.TabStop = true;
             this.radioButton6.Text = "DWORD";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(71, 85);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(41, 31);
+            this.button9.TabIndex = 61;
+            this.button9.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(445, 312);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.rownosc);
@@ -709,6 +732,7 @@ namespace Calculator
             this.Controls.Add(this.button14);
             this.Controls.Add(this.Lnawias);
             this.Controls.Add(this.textBox2);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MaximumSize = new System.Drawing.Size(461, 351);
             this.MinimumSize = new System.Drawing.Size(461, 351);
             this.Name = "Form1";
@@ -732,7 +756,7 @@ namespace Calculator
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        public  System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button Lnawias;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button RoL;
@@ -789,8 +813,9 @@ namespace Calculator
         private RadioButton radioButton7;
         private RadioButton radioButton6;
         private RadioButton radioButton8;
+        private Button button9;
     }
 }
-    
+
 
 
