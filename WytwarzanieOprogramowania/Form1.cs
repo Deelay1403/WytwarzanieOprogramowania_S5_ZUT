@@ -25,6 +25,7 @@ namespace Calculator
             InitializeComponent();
             DEC.Select();
             radioButton6.Select();
+            button9.Enabled = false;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -238,19 +239,19 @@ namespace Calculator
 
             if (Operation == "+")
             {
-                Result = (First + SecondNumber);
+                Result = WytwarzanieOprogramowania.Calc.Add(First , SecondNumber);
                 textBox2.Text = Convert.ToString(Result);
                 First = Result;
             }
             else if (Operation == "-")
             {
-                Result = (First - SecondNumber);
+                Result = WytwarzanieOprogramowania.Calc.Sub(First, SecondNumber);
                 textBox2.Text = Convert.ToString(Result);
                 First = Result;
             }
             else if (Operation == "*")
             {
-                Result = (First * SecondNumber);
+                Result = WytwarzanieOprogramowania.Calc.Multiply(First, SecondNumber);
                 textBox2.Text = Convert.ToString(Result);
                 First = Result;
             }
@@ -263,13 +264,18 @@ namespace Calculator
                 }
                 else
                 {
-                    Result = (First / SecondNumber);
+                    Result = WytwarzanieOprogramowania.Calc.Divide(First, SecondNumber);
                     textBox2.Text = Convert.ToString(Result);
                     First = Result;
                 }
             }
-        
-    }
+            else if (Operation == "%")
+            {
+                Result = WytwarzanieOprogramowania.Calc.Modulo(First, SecondNumber);
+                textBox2.Text = Convert.ToString(Result);
+                First = Result;
+            }
+        }
 
        
 
@@ -373,14 +379,116 @@ namespace Calculator
 
         private void Ror_Click(object sender, EventArgs e)
         {
-            
+//sprawdzic co sie dzieje w normalnym jak masz 0
+            long Result=WytwarzanieOprogramowania.Calc.Ror(Convert.ToInt64(textBox2.Text));
+            textBox2.Text = Convert.ToString(Result);
+
         }
 
         private void RoL_Click(object sender, EventArgs e)
         {
-
+            long Result = WytwarzanieOprogramowania.Calc.Rol(Convert.ToInt64(textBox2.Text));
+            textBox2.Text = Convert.ToString(Result);
 
         }
 
+        private void CE_Click(object sender, EventArgs e)
+        {
+            string Result;
+            Result=WytwarzanieOprogramowania.Calc.CE(textBox2.Text);
+            textBox2.Text = Convert.ToString(Result);
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            long Result;
+            Result = WytwarzanieOprogramowania.Calc.C(Convert.ToInt64(textBox2.Text));
+            textBox2.Text = Convert.ToString(Result);
+            
+            Result = WytwarzanieOprogramowania.Calc.C(Convert.ToInt64(First));
+            textBox2.Text = Convert.ToString(Result);
+            Operation = "0";
+
+        }
+
+        private void plusMinus_Click(object sender, EventArgs e)
+        {
+            long Result;
+            Result = WytwarzanieOprogramowania.Calc.PlusMinus(Convert.ToInt64(First));
+            textBox2.Text = Convert.ToString(Result);
+
+        }
+
+        private void Mod_Click(object sender, EventArgs e)
+        {
+            if (Operation == "0")
+            {
+                First = Convert.ToInt64(textBox2.Text);
+                textBox2.Text = "0";
+                Operation = "%";
+            }
+            else
+            {
+                holder = Convert.ToInt64(textBox2.Text);
+                textBox2.Text = "0";
+                First = WytwarzanieOprogramowania.Calc.Modulo(Convert.ToInt64(First), Convert.ToInt64(holder));
+
+            }
+        }
+
+        private void Or_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Xor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lsh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Rsh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Not_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void And_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MC_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MR_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MS_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mplus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mminus_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

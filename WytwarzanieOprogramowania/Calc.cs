@@ -88,6 +88,7 @@ namespace WytwarzanieOprogramowania
         public static long Modulo(int a, int b) => a % b;
         public static long Modulo(short a, short b) => a % b;
         public static long Modulo(sbyte a, sbyte b) => a % b;
+        public static double Modulo(double a, double b) => a % b;
 
         public static long Rol(long a) => a << 1;
         public static long Ror(long a) => a >> 1;

@@ -149,6 +149,7 @@ namespace Calculator
             this.Or.TabIndex = 10;
             this.Or.Text = "Or";
             this.Or.UseVisualStyleBackColor = true;
+            this.Or.Click += new System.EventHandler(this.Or_Click);
             // 
             // Lsh
             // 
@@ -158,6 +159,7 @@ namespace Calculator
             this.Lsh.TabIndex = 11;
             this.Lsh.Text = "Lsh";
             this.Lsh.UseVisualStyleBackColor = true;
+            this.Lsh.Click += new System.EventHandler(this.Lsh_Click);
             // 
             // Not
             // 
@@ -167,6 +169,7 @@ namespace Calculator
             this.Not.TabIndex = 12;
             this.Not.Text = "Not";
             this.Not.UseVisualStyleBackColor = true;
+            this.Not.Click += new System.EventHandler(this.Not_Click);
             // 
             // Mod
             // 
@@ -176,6 +179,7 @@ namespace Calculator
             this.Mod.TabIndex = 13;
             this.Mod.Text = "Mod";
             this.Mod.UseVisualStyleBackColor = true;
+            this.Mod.Click += new System.EventHandler(this.Mod_Click);
             // 
             // A
             // 
@@ -194,6 +198,7 @@ namespace Calculator
             this.MC.TabIndex = 15;
             this.MC.Text = "MC";
             this.MC.UseVisualStyleBackColor = true;
+            this.MC.Click += new System.EventHandler(this.MC_Click);
             // 
             // MR
             // 
@@ -203,6 +208,7 @@ namespace Calculator
             this.MR.TabIndex = 16;
             this.MR.Text = "MR";
             this.MR.UseVisualStyleBackColor = true;
+            this.MR.Click += new System.EventHandler(this.MR_Click);
             // 
             // MS
             // 
@@ -212,6 +218,7 @@ namespace Calculator
             this.MS.TabIndex = 17;
             this.MS.Text = "MS";
             this.MS.UseVisualStyleBackColor = true;
+            this.MS.Click += new System.EventHandler(this.MS_Click);
             // 
             // Mplus
             // 
@@ -221,6 +228,7 @@ namespace Calculator
             this.Mplus.TabIndex = 18;
             this.Mplus.Text = "M+";
             this.Mplus.UseVisualStyleBackColor = true;
+            this.Mplus.Click += new System.EventHandler(this.Mplus_Click);
             // 
             // Mminus
             // 
@@ -230,6 +238,7 @@ namespace Calculator
             this.Mminus.TabIndex = 19;
             this.Mminus.Text = "M-";
             this.Mminus.UseVisualStyleBackColor = true;
+            this.Mminus.Click += new System.EventHandler(this.Mminus_Click);
             // 
             // Xor
             // 
@@ -239,6 +248,7 @@ namespace Calculator
             this.Xor.TabIndex = 20;
             this.Xor.Text = "Xor";
             this.Xor.UseVisualStyleBackColor = true;
+            this.Xor.Click += new System.EventHandler(this.Xor_Click);
             // 
             // Ror
             // 
@@ -248,6 +258,7 @@ namespace Calculator
             this.Ror.TabIndex = 21;
             this.Ror.Text = "RoR";
             this.Ror.UseVisualStyleBackColor = true;
+            this.Ror.Click += new System.EventHandler(this.Ror_Click);
             // 
             // B
             // 
@@ -266,6 +277,7 @@ namespace Calculator
             this.Rsh.TabIndex = 23;
             this.Rsh.Text = "Rsh";
             this.Rsh.UseVisualStyleBackColor = true;
+            this.Rsh.Click += new System.EventHandler(this.Rsh_Click);
             // 
             // And
             // 
@@ -275,6 +287,7 @@ namespace Calculator
             this.And.TabIndex = 24;
             this.And.Text = "And";
             this.And.UseVisualStyleBackColor = true;
+            this.And.Click += new System.EventHandler(this.And_Click);
             // 
             // Pnawias
             // 
@@ -303,6 +316,7 @@ namespace Calculator
             this.CE.TabIndex = 27;
             this.CE.Text = "CE";
             this.CE.UseVisualStyleBackColor = true;
+            this.CE.Click += new System.EventHandler(this.CE_Click);
             // 
             // Clear
             // 
@@ -312,6 +326,7 @@ namespace Calculator
             this.Clear.TabIndex = 28;
             this.Clear.Text = "c";
             this.Clear.UseVisualStyleBackColor = true;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
             // plusMinus
             // 
@@ -321,6 +336,7 @@ namespace Calculator
             this.plusMinus.TabIndex = 29;
             this.plusMinus.Text = "±";
             this.plusMinus.UseVisualStyleBackColor = true;
+            this.plusMinus.Click += new System.EventHandler(this.plusMinus_Click);
             // 
             // pierwiastek
             // 
