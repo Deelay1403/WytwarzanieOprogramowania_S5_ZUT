@@ -708,6 +708,8 @@ namespace Calculator
             this.Controls.Add(this.button14);
             this.Controls.Add(this.Lnawias);
             this.Controls.Add(this.textBox2);
+            this.MaximumSize = new System.Drawing.Size(461, 351);
+            this.MinimumSize = new System.Drawing.Size(461, 351);
             this.Name = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

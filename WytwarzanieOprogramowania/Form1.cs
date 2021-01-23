@@ -285,6 +285,12 @@ namespace Calculator
             D.Enabled = false;
             E.Enabled = false;
             F.Enabled = false;
+            przecinek.Enabled = false;
+            ulamek.Enabled = false;
+            pierwiastek.Enabled = false;
+            procent.Enabled = false;
+
+
         }
 
         private void OCT_CheckedChanged(object sender, EventArgs e)
@@ -303,6 +309,10 @@ namespace Calculator
             D.Enabled = false;
             E.Enabled = false;
             F.Enabled = false;
+            przecinek.Enabled = false;
+            ulamek.Enabled = false;
+            pierwiastek.Enabled = false;
+            procent.Enabled = false;
         }
 
         private void DEC_CheckedChanged(object sender, EventArgs e)
@@ -321,6 +331,10 @@ namespace Calculator
             D.Enabled = false;
             E.Enabled = false;
             F.Enabled = false;
+            przecinek.Enabled = false;
+            ulamek.Enabled = false;
+            pierwiastek.Enabled = false;
+            procent.Enabled = false;
         }
         private void HEX_CheckedChanged(object sender, EventArgs e)
         {
@@ -338,6 +352,10 @@ namespace Calculator
             D.Enabled = true;
             E.Enabled = true;
             F.Enabled = true;
+            przecinek.Enabled = false;
+            ulamek.Enabled = false;
+            pierwiastek.Enabled = false;
+            procent.Enabled = false;
         }
 
         private void strzalka_Click(object sender, EventArgs e)
