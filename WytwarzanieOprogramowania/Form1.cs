@@ -10,10 +10,18 @@ using System.Windows.Forms;
 
 namespace Calculator
 {
+    class Oper
+    {
+        string sym = "0";
+        byte weight = 1;
+    }
+
     public partial class Form1 : Form
     {
         double First;
         string Operation="0";
+
+
         double holder;
      
         public Form1()

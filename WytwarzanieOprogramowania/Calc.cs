@@ -9,115 +9,94 @@ namespace WytwarzanieOprogramowania
     public class Calc
     {
         
-
+        //Sekcja dodawania
+        public static long Add(long a, long b) => a + b;
         public static int Add(int a, int b) => a + b;
-        public static int Sub(int a, int b) => a - b;
-        public static int Multiply(int a, int b) => a * b;
-        public static int Divide(int a, int b) => a / b;
-
+        public static short Add(short a, short b) => (short)(a + b);
+        public static sbyte Add(sbyte a, sbyte b) => (sbyte)(a + b);
         public static double Add(double a, double b) => a + b;
+        //Sekcja odejmowania
+        public static long Sub(long a, long b) => a - b;
+        public static int Sub(int a, int b) => a - b;
+        public static short Sub(short a, short b) => (short)(a - b);
+        public static sbyte Sub(sbyte a, sbyte b) => (sbyte)(a - b);
         public static double Sub(double a, double b) => a - b;
+
+        //Sekcja mnożenia
+        public static long Multiply(long a, long b) => a * b;
+        public static int Multiply(int a, int b) => a * b;
+        public static short Multiply(short a, short b) => (short)(a * b);
+        public static sbyte Multiply(sbyte a, sbyte b) => (sbyte)(a * b);
         public static double Multiply(double a, double b) => a * b;
+
+        //Sekcja dzielenia
+        public static long Divide(long a, long b) => a / b;
+        public static int Divide(int a, int b) => a / b;
+        public static short Divide(short a, short b) => (short)(a / b);
+        public static sbyte Divide(sbyte a, sbyte b) => (sbyte)(a / b);
         public static double Divide(double a, double b) => a / b;
-        /*konwersja z dec na inny system przyjmujemy liczbe zwracamy tablice intow  */
-        public static int[] dectobin(int n) {
-            int i;
-            int[] a = new int[10];
+        
+        
+        
+        
+        /*konwersja na inny system  */
+        public static string convert(long n, int sys) => Convert.ToString(n, sys);
+        public static string convert(int n, int sys) => Convert.ToString(n, sys);
+        public static string convert(short n, int sys) => Convert.ToString(n, sys);
+        public static string convert(sbyte n, int sys) => Convert.ToString((byte)n, sys);
 
-            for (i = 0; n > 0; i++)
-            {
-                /*bity sa zapisywane od tyłu w każdej konwersji*/
-                a[i] = n % 2;
-                n = n / 2;
-            }
-            return a;
-        }
-
-        public static int[] dectookt(int n)
-        {
-            int i;
-            int[] a = new int[10];
-
-            for (i = 0; n > 0; i++)
-            {
-                a[i] = n % 8;
-                n = n / 8;
-            }
-            return a;
-        }
-
-        public static int[] dectohex(int n)
-        {
-            int i;
-            int[] a = new int[10];
-
-            for (i = 0; n > 0; i++)
-            {
-                a[i] = n % 16;
-                n = n / 16;
-            }
-            return a;
-        }
-        /*konwersja z innego systemu na dec przyjmujemy tablice intów zwracamy inta */
-        public static int bintodec(int[] n)
-        {
-            int i;
-            int a = 0;
-            int rozmiar = n.Length;
-            for (i = 0; i < rozmiar; i++)
-            {
-                a += n[i] * 2 ^ i;
-            }
-            return a;
-        }
-        public static int okttodec(int[] n)
-        {
-            int i;
-            int a = 0;
-            int rozmiar = n.Length;
-            for (i = 0; i < rozmiar; i++)
-            {
-                a += n[i] * 8 ^ i;
-            }
-            return a;
-        }
-
-        public static int hextodec(int[] n)
-        {
-            int i;
-            int a = 0;
-            int rozmiar = n.Length;
-            for (i = 0; i < rozmiar; i++)
-            {
-                a += n[i] * 16 ^ i;
-            }
-            return a;
-        }
-        /*(a i b to liczby decymalne bitowe hex i okt zapisane jako int*/
+        //Sekcja OR
+        public static long OR(long a, long b) => a | b;
         public static int OR(int a, int b) => a | b;
+        public static short OR(short a, short b) => (short)(a | b);
+        public static sbyte OR(sbyte a, sbyte b) => (sbyte)(a | b);
+
+        //Sekcja AND
+        public static long AND(long a, long b) => a & b;
         public static int AND(int a, int b) => a & b;
+        public static short AND(short a, short b) => (short)(a & b);
+        public static sbyte AND(sbyte a, sbyte b) => (sbyte)(a & b);
+
+        //XOR
+        public static long XOR(long a, long b) => a ^ b;
         public static int XOR(int a, int b) => a ^ b;
+        public static short XOR(short a, short b) => (short)(a ^ b);
+        public static sbyte XOR(sbyte a, sbyte b) => (sbyte)(a ^ b);
+
+        //NOT
+        public static long NOT(long a) => ~a;
         public static int NOT(int a) => ~a;
-        /*(a  to liczba decymalna bitowa hex i okt zapisana jako int a b  to o ile bitów przesuwamy*/
+        public static short NOT(short a) => (short)~a;
+        public static sbyte NOT(sbyte a) => (sbyte)~a;
+        
+        //Sekcja Lsh
+        public static long Lsh(long a, int b) => a << b;
         public static int Lsh(int a, int b) => a << b;
+        public static short Lsh(short a, int b) => (short)(a << b);
+        public static sbyte Lsh(sbyte a, int b) => (sbyte)(a << b);
+
+        //Sekcja Rsh
+        public static long Rsh(long a, int b) => a >> b;
         public static int Rsh(int a, int b) => a >> b;
+        public static short Rsh(short a, int b) => (short)(a >> b);
+        public static sbyte Rsh(sbyte a, int b) => (sbyte)(a >> b);
 
         /* nowe rzeczy */
-        public static int PlusMinus(int a) => -1 * a;
-        public static int Modulo(int a, int b) => a % b;
-        public static int Rol(int a) => a << 1;
-        public static int Ror(int a) => a >> 1;
-        public static int pamiec;
-        public static int word=0;
+        public static long PlusMinus(long a) => -1 * a;
+        public static long Modulo(long a, long b) => a % b;
+        public static long Rol(long a) => a << 1;
+        public static long Ror(long a) => a >> 1;
+        public static long pamiec;
+        public static long word=0;
         public static string text;
-        public static int C(int a)=> a = 0;
-        public static int Mplus(int a ,int pamiec) => pamiec + a;
-        public static int Mminus(int a, int pamiec) => pamiec - a;
-        public static int MC(int pamiec) => pamiec = 0;
+        public static long C(long a)=> a = 0;
+        public static long Mplus(long a ,long pamiec) => pamiec + a;
+        public static long Mminus(long a, long pamiec) => pamiec - a;
+        public static long MC(long pamiec) => pamiec = 0;
 
         public static void Backspace(string text) => text=text.Substring(0, text.Length - 1); 
         public static void CE(string text) => text="0";
-        public static void MR(int pamiec) => text =Convert.ToString(pamiec);
+        public static void MR(long pamiec) => text =Convert.ToString(pamiec);
         public static void Byte() => word = 8;
         public static void Word() => word = 16;
         public static void QWord() => word = 64;
