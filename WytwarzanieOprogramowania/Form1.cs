@@ -15,6 +15,7 @@ namespace Calculator
         double First;
         string Operation="0";
         double holder;
+     
         public Form1()
         {
             InitializeComponent();
@@ -101,7 +102,7 @@ namespace Calculator
 
         private void siedem_Click(object sender, EventArgs e)
         {
-            if (textBox2.Text == "0" && textBox2.Text != null)
+            if (textBox2.Text == "0" || textBox2.Text == null)//zmienić resztę na takie  jak obok
             {
                 textBox2.Text = "7";
             }
@@ -159,8 +160,8 @@ namespace Calculator
             {
                 holder = Convert.ToDouble(textBox2.Text);
                 textBox2.Text = "0";
-                First = First + holder;
-
+                //First = First + holder;
+                First = WytwarzanieOprogramowania.Calc.Add(First, holder);
             }
         }
 
@@ -177,7 +178,7 @@ namespace Calculator
             {
                 holder = Convert.ToDouble(textBox2.Text);
                 textBox2.Text = "0";
-                First = First - holder;
+                First = WytwarzanieOprogramowania.Calc.Sub(First, holder);
 
             }
         }
@@ -195,7 +196,7 @@ namespace Calculator
             {
                 holder = Convert.ToDouble(textBox2.Text);
                 textBox2.Text = "0";
-                First = First * holder;
+                First = WytwarzanieOprogramowania.Calc.Multiply(First, holder);
 
             }
         }
@@ -213,7 +214,7 @@ namespace Calculator
             {
                 holder = Convert.ToDouble(textBox2.Text);
                 textBox2.Text = "0";
-                First = First / holder;
+                First = WytwarzanieOprogramowania.Calc.Divide(First, holder);
 
             }
         }
@@ -259,5 +260,89 @@ namespace Calculator
             }
         
     }
+
+        private void RoL_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+        private void BIN_CheckedChanged(object sender, EventArgs e)
+        {
+           
+            dwa.Enabled = false;
+            trzy.Enabled = false;
+            cztery.Enabled = false;
+            piec.Enabled = false;
+            szesc.Enabled = false;
+            siedem.Enabled = false;
+            osiem.Enabled = false;
+            dziewiec.Enabled = false;
+            A.Enabled = false;
+            B.Enabled = false;
+            C.Enabled = false;
+            D.Enabled = false;
+            E.Enabled = false;
+            F.Enabled = false;
+        }
+
+        private void OCT_CheckedChanged(object sender, EventArgs e)
+        {
+            dwa.Enabled = true;
+            trzy.Enabled = true;
+            cztery.Enabled = true;
+            piec.Enabled = true;
+            szesc.Enabled = true;
+            siedem.Enabled = true;
+            osiem.Enabled = false;
+            dziewiec.Enabled = false;
+            A.Enabled = false;
+            B.Enabled = false;
+            C.Enabled = false;
+            D.Enabled = false;
+            E.Enabled = false;
+            F.Enabled = false;
+        }
+
+        private void DEC_CheckedChanged(object sender, EventArgs e)
+        {
+            dwa.Enabled = true;
+            trzy.Enabled = true;
+            cztery.Enabled = true;
+            piec.Enabled = true;
+            szesc.Enabled = true;
+            siedem.Enabled = true;
+            osiem.Enabled = true;
+            dziewiec.Enabled = true;
+            A.Enabled = false;
+            B.Enabled = false;
+            C.Enabled = false;
+            D.Enabled = false;
+            E.Enabled = false;
+            F.Enabled = false;
+        }
+        private void HEX_CheckedChanged(object sender, EventArgs e)
+        {
+            dwa.Enabled = true;
+            trzy.Enabled = true;
+            cztery.Enabled = true;
+            piec.Enabled = true;
+            szesc.Enabled = true;
+            siedem.Enabled = true;
+            osiem.Enabled = true;
+            dziewiec.Enabled = true;
+            A.Enabled = true;
+            B.Enabled = true;
+            C.Enabled = true;
+            D.Enabled = true;
+            E.Enabled = true;
+            F.Enabled = true;
+        }
+
+        private void strzalka_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

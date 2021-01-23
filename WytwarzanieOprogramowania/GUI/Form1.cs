@@ -1,15 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-namespace Calculator
+﻿namespace GUI
 {
-    public partial class Form1
+    partial class Form1
     {
         /// <summary>
         /// Wymagana zmienna projektanta.
@@ -35,11 +26,13 @@ namespace Calculator
         /// Metoda wymagana do obsługi projektanta — nie należy modyfikować
         /// jej zawartości w edytorze kodu.
         /// </summary>
-        public   void InitializeComponent()
+        private void InitializeComponent()
         {
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.Lnawias = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
+            this.Hex = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.RoL = new System.Windows.Forms.Button();
             this.Or = new System.Windows.Forms.Button();
             this.Lsh = new System.Windows.Forms.Button();
@@ -61,7 +54,7 @@ namespace Calculator
             this.CE = new System.Windows.Forms.Button();
             this.Clear = new System.Windows.Forms.Button();
             this.plusMinus = new System.Windows.Forms.Button();
-            this.pierwiastek = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
             this.D = new System.Windows.Forms.Button();
             this.E = new System.Windows.Forms.Button();
             this.F = new System.Windows.Forms.Button();
@@ -84,30 +77,15 @@ namespace Calculator
             this.plus = new System.Windows.Forms.Button();
             this.ulamek = new System.Windows.Forms.Button();
             this.rownosc = new System.Windows.Forms.Button();
-            this.BIN = new System.Windows.Forms.RadioButton();
-            this.OCT = new System.Windows.Forms.RadioButton();
-            this.DEC = new System.Windows.Forms.RadioButton();
-            this.HEX = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox2
             // 
-            this.textBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox2.Location = new System.Drawing.Point(2, 12);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(438, 67);
             this.textBox2.TabIndex = 0;
-            this.textBox2.Text = "0";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Lnawias
             // 
@@ -127,6 +105,33 @@ namespace Calculator
             this.button14.Text = "button14";
             this.button14.UseVisualStyleBackColor = true;
             // 
+            // Hex
+            // 
+            this.Hex.FormattingEnabled = true;
+            this.Hex.Items.AddRange(new object[] {
+            "Hex",
+            "Dec",
+            "Oct",
+            "Bin"});
+            this.Hex.Location = new System.Drawing.Point(2, 85);
+            this.Hex.Name = "Hex";
+            this.Hex.Size = new System.Drawing.Size(62, 109);
+            this.Hex.TabIndex = 7;
+            this.Hex.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Qword",
+            "Dword",
+            "Word",
+            "Bajt"});
+            this.checkedListBox1.Location = new System.Drawing.Point(2, 195);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(62, 109);
+            this.checkedListBox1.TabIndex = 8;
+            // 
             // RoL
             // 
             this.RoL.Location = new System.Drawing.Point(71, 163);
@@ -135,7 +140,6 @@ namespace Calculator
             this.RoL.TabIndex = 9;
             this.RoL.Text = "RoL";
             this.RoL.UseVisualStyleBackColor = true;
-            this.RoL.Click += new System.EventHandler(this.RoL_Click);
             // 
             // Or
             // 
@@ -154,6 +158,7 @@ namespace Calculator
             this.Lsh.TabIndex = 11;
             this.Lsh.Text = "Lsh";
             this.Lsh.UseVisualStyleBackColor = true;
+            this.Lsh.Click += new System.EventHandler(this.button17_Click);
             // 
             // Not
             // 
@@ -163,6 +168,7 @@ namespace Calculator
             this.Not.TabIndex = 12;
             this.Not.Text = "Not";
             this.Not.UseVisualStyleBackColor = true;
+            this.Not.Click += new System.EventHandler(this.button18_Click);
             // 
             // Mod
             // 
@@ -172,6 +178,7 @@ namespace Calculator
             this.Mod.TabIndex = 13;
             this.Mod.Text = "Mod";
             this.Mod.UseVisualStyleBackColor = true;
+            this.Mod.Click += new System.EventHandler(this.Mod_Click);
             // 
             // A
             // 
@@ -271,6 +278,7 @@ namespace Calculator
             this.And.TabIndex = 24;
             this.And.Text = "And";
             this.And.UseVisualStyleBackColor = true;
+            this.And.Click += new System.EventHandler(this.button27_Click);
             // 
             // Pnawias
             // 
@@ -289,7 +297,6 @@ namespace Calculator
             this.strzalka.TabIndex = 26;
             this.strzalka.Text = "<--";
             this.strzalka.UseVisualStyleBackColor = true;
-            this.strzalka.Click += new System.EventHandler(this.strzalka_Click);
             // 
             // CE
             // 
@@ -318,14 +325,15 @@ namespace Calculator
             this.plusMinus.Text = "±";
             this.plusMinus.UseVisualStyleBackColor = true;
             // 
-            // pierwiastek
+            // button33
             // 
-            this.pierwiastek.Location = new System.Drawing.Point(399, 122);
-            this.pierwiastek.Name = "pierwiastek";
-            this.pierwiastek.Size = new System.Drawing.Size(41, 31);
-            this.pierwiastek.TabIndex = 30;
-            this.pierwiastek.Text = "√";
-            this.pierwiastek.UseVisualStyleBackColor = true;
+            this.button33.Location = new System.Drawing.Point(399, 122);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(41, 31);
+            this.button33.TabIndex = 30;
+            this.button33.Text = "√";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
             // 
             // D
             // 
@@ -380,7 +388,6 @@ namespace Calculator
             this.siedem.TabIndex = 36;
             this.siedem.Text = "7";
             this.siedem.UseVisualStyleBackColor = true;
-            this.siedem.Click += new System.EventHandler(this.siedem_Click);
             // 
             // osiem
             // 
@@ -390,7 +397,6 @@ namespace Calculator
             this.osiem.TabIndex = 37;
             this.osiem.Text = "8";
             this.osiem.UseVisualStyleBackColor = true;
-            this.osiem.Click += new System.EventHandler(this.osiem_Click);
             // 
             // dziewiec
             // 
@@ -400,7 +406,6 @@ namespace Calculator
             this.dziewiec.TabIndex = 38;
             this.dziewiec.Text = "9";
             this.dziewiec.UseVisualStyleBackColor = true;
-            this.dziewiec.Click += new System.EventHandler(this.dziewiec_Click);
             // 
             // podzielic
             // 
@@ -410,7 +415,7 @@ namespace Calculator
             this.podzielic.TabIndex = 39;
             this.podzielic.Text = "/";
             this.podzielic.UseVisualStyleBackColor = true;
-            this.podzielic.Click += new System.EventHandler(this.podzielic_Click);
+            this.podzielic.Click += new System.EventHandler(this.button42_Click);
             // 
             // cztery
             // 
@@ -420,7 +425,6 @@ namespace Calculator
             this.cztery.TabIndex = 40;
             this.cztery.Text = "4";
             this.cztery.UseVisualStyleBackColor = true;
-            this.cztery.Click += new System.EventHandler(this.cztery_Click);
             // 
             // jeden
             // 
@@ -430,7 +434,6 @@ namespace Calculator
             this.jeden.TabIndex = 41;
             this.jeden.Text = "1";
             this.jeden.UseVisualStyleBackColor = true;
-            this.jeden.Click += new System.EventHandler(this.jeden_Click);
             // 
             // zero
             // 
@@ -440,7 +443,7 @@ namespace Calculator
             this.zero.TabIndex = 42;
             this.zero.Text = "0";
             this.zero.UseVisualStyleBackColor = true;
-            this.zero.Click += new System.EventHandler(this.zero_Click);
+            this.zero.Click += new System.EventHandler(this.button45_Click);
             // 
             // piec
             // 
@@ -450,7 +453,6 @@ namespace Calculator
             this.piec.TabIndex = 43;
             this.piec.Text = "5";
             this.piec.UseVisualStyleBackColor = true;
-            this.piec.Click += new System.EventHandler(this.piec_Click);
             // 
             // dwa
             // 
@@ -460,7 +462,6 @@ namespace Calculator
             this.dwa.TabIndex = 44;
             this.dwa.Text = "2";
             this.dwa.UseVisualStyleBackColor = true;
-            this.dwa.Click += new System.EventHandler(this.dwa_Click);
             // 
             // szesc
             // 
@@ -470,7 +471,6 @@ namespace Calculator
             this.szesc.TabIndex = 46;
             this.szesc.Text = "6";
             this.szesc.UseVisualStyleBackColor = true;
-            this.szesc.Click += new System.EventHandler(this.szesc_Click);
             // 
             // trzy
             // 
@@ -480,7 +480,6 @@ namespace Calculator
             this.trzy.TabIndex = 47;
             this.trzy.Text = "3";
             this.trzy.UseVisualStyleBackColor = true;
-            this.trzy.Click += new System.EventHandler(this.trzy_Click);
             // 
             // przecinek
             // 
@@ -499,7 +498,7 @@ namespace Calculator
             this.razy.TabIndex = 49;
             this.razy.Text = "*";
             this.razy.UseVisualStyleBackColor = true;
-            this.razy.Click += new System.EventHandler(this.razy_Click);
+            this.razy.Click += new System.EventHandler(this.button52_Click);
             // 
             // minus
             // 
@@ -509,7 +508,6 @@ namespace Calculator
             this.minus.TabIndex = 50;
             this.minus.Text = "-";
             this.minus.UseVisualStyleBackColor = true;
-            this.minus.Click += new System.EventHandler(this.minus_Click);
             // 
             // plus
             // 
@@ -519,7 +517,6 @@ namespace Calculator
             this.plus.TabIndex = 51;
             this.plus.Text = "+";
             this.plus.UseVisualStyleBackColor = true;
-            this.plus.Click += new System.EventHandler(this.plus_Click);
             // 
             // ulamek
             // 
@@ -538,129 +535,10 @@ namespace Calculator
             this.rownosc.TabIndex = 53;
             this.rownosc.Text = "=";
             this.rownosc.UseVisualStyleBackColor = true;
-            this.rownosc.Click += new System.EventHandler(this.rownosc_Click);
-            // 
-            // BIN
-            // 
-            this.BIN.AutoSize = true;
-            this.BIN.Location = new System.Drawing.Point(11, 19);
-            this.BIN.Name = "BIN";
-            this.BIN.Size = new System.Drawing.Size(43, 17);
-            this.BIN.TabIndex = 54;
-            this.BIN.TabStop = true;
-            this.BIN.Text = "BIN";
-            this.BIN.UseVisualStyleBackColor = true;
-            this.BIN.CheckedChanged += new System.EventHandler(this.BIN_CheckedChanged);
-            // 
-            // OCT
-            // 
-            this.OCT.AutoSize = true;
-            this.OCT.Location = new System.Drawing.Point(11, 41);
-            this.OCT.Name = "OCT";
-            this.OCT.Size = new System.Drawing.Size(47, 17);
-            this.OCT.TabIndex = 55;
-            this.OCT.TabStop = true;
-            this.OCT.Text = "OCT";
-            this.OCT.UseVisualStyleBackColor = true;
-            this.OCT.CheckedChanged += new System.EventHandler(this.OCT_CheckedChanged);
-            // 
-            // DEC
-            // 
-            this.DEC.AutoSize = true;
-            this.DEC.Location = new System.Drawing.Point(11, 59);
-            this.DEC.Name = "DEC";
-            this.DEC.Size = new System.Drawing.Size(47, 17);
-            this.DEC.TabIndex = 56;
-            this.DEC.TabStop = true;
-            this.DEC.Text = "DEC";
-            this.DEC.UseVisualStyleBackColor = true;
-            this.DEC.CheckedChanged += new System.EventHandler(this.DEC_CheckedChanged);
-            // 
-            // HEX
-            // 
-            this.HEX.AutoSize = true;
-            this.HEX.Location = new System.Drawing.Point(11, 82);
-            this.HEX.Name = "HEX";
-            this.HEX.Size = new System.Drawing.Size(47, 17);
-            this.HEX.TabIndex = 57;
-            this.HEX.TabStop = true;
-            this.HEX.Text = "HEX";
-            this.HEX.UseVisualStyleBackColor = true;
-            this.HEX.CheckedChanged += new System.EventHandler(this.HEX_CheckedChanged);
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(6, 7);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(68, 17);
-            this.radioButton5.TabIndex = 58;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "QWORD";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.BIN);
-            this.groupBox1.Controls.Add(this.OCT);
-            this.groupBox1.Controls.Add(this.HEX);
-            this.groupBox1.Controls.Add(this.DEC);
-            this.groupBox1.Location = new System.Drawing.Point(2, 88);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(64, 111);
-            this.groupBox1.TabIndex = 59;
-            this.groupBox1.TabStop = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.radioButton8);
-            this.groupBox2.Controls.Add(this.radioButton7);
-            this.groupBox2.Controls.Add(this.radioButton6);
-            this.groupBox2.Controls.Add(this.radioButton5);
-            this.groupBox2.Location = new System.Drawing.Point(-6, 200);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(72, 111);
-            this.groupBox2.TabIndex = 60;
-            this.groupBox2.TabStop = false;
-            // 
-            // radioButton8
-            // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(11, 83);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(51, 17);
-            this.radioButton8.TabIndex = 61;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "BAJT";
-            this.radioButton8.UseVisualStyleBackColor = true;
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(8, 57);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(60, 17);
-            this.radioButton7.TabIndex = 60;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "WORD";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(4, 30);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(68, 17);
-            this.radioButton6.TabIndex = 59;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "DWORD";
-            this.radioButton6.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(445, 312);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.rownosc);
             this.Controls.Add(this.ulamek);
             this.Controls.Add(this.plus);
@@ -683,7 +561,7 @@ namespace Calculator
             this.Controls.Add(this.F);
             this.Controls.Add(this.E);
             this.Controls.Add(this.D);
-            this.Controls.Add(this.pierwiastek);
+            this.Controls.Add(this.button33);
             this.Controls.Add(this.plusMinus);
             this.Controls.Add(this.Clear);
             this.Controls.Add(this.CE);
@@ -705,14 +583,12 @@ namespace Calculator
             this.Controls.Add(this.Lsh);
             this.Controls.Add(this.Or);
             this.Controls.Add(this.RoL);
+            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.Hex);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.Lnawias);
             this.Controls.Add(this.textBox2);
             this.Name = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -729,9 +605,11 @@ namespace Calculator
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        public  System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button Lnawias;
         private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.CheckedListBox Hex;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Button RoL;
         private System.Windows.Forms.Button Or;
         private System.Windows.Forms.Button Lsh;
@@ -753,7 +631,7 @@ namespace Calculator
         private System.Windows.Forms.Button CE;
         private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.Button plusMinus;
-        private System.Windows.Forms.Button pierwiastek;
+        private System.Windows.Forms.Button button33;
         private System.Windows.Forms.Button D;
         private System.Windows.Forms.Button E;
         private System.Windows.Forms.Button F;
@@ -776,18 +654,6 @@ namespace Calculator
         private System.Windows.Forms.Button plus;
         private System.Windows.Forms.Button ulamek;
         private System.Windows.Forms.Button rownosc;
-        private RadioButton BIN;
-        private RadioButton OCT;
-        private RadioButton DEC;
-        private RadioButton HEX;
-        private RadioButton radioButton5;
-        private GroupBox groupBox1;
-        private GroupBox groupBox2;
-        private RadioButton radioButton7;
-        private RadioButton radioButton6;
-        private RadioButton radioButton8;
     }
 }
-    
-
 
