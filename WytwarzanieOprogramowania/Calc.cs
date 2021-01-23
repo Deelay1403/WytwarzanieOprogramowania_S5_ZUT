@@ -8,6 +8,8 @@ namespace WytwarzanieOprogramowania
 {
     public class Calc
     {
+        
+
         public static int Add(int a, int b) => a + b;
         public static int Sub(int a, int b) => a - b;
         public static int Multiply(int a, int b) => a * b;
@@ -105,14 +107,24 @@ namespace WytwarzanieOprogramowania
         public static int Modulo(int a, int b) => a % b;
         public static int Rol(int a) => a << 1;
         public static int Ror(int a) => a >> 1;
-       /* public static int CE(int a) =>; Skasowanie ostatniej liczby
-        public static Backspace() =>;Skasowanie ostatniego znaku (operacje sie nie licza)
-        public static MR(int pamiec)=>; Wyswietlenie pamieci
-             */
+        public static int pamiec;
+        public static int word=0;
+        public static string text;
         public static int C(int a)=> a = 0;
         public static int Mplus(int a ,int pamiec) => pamiec + a;
         public static int Mminus(int a, int pamiec) => pamiec - a;
         public static int MC(int pamiec) => pamiec = 0;
+
+        public static void Backspace(string text) => text=text.Substring(0, text.Length - 1); 
+        public static void CE(string text) => text="0";
+        public static void MR(int pamiec) => text =Convert.ToString(pamiec);
+        public static void Byte() => word = 8;
+        public static void Word() => word = 16;
+        public static void QWord() => word = 64;
+        public static void DWord() => word = 32;
+
+
+
     }
 
 }
