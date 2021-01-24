@@ -275,6 +275,40 @@ namespace Calculator
                 textBox2.Text = Convert.ToString(Result);
                 First = Result;
             }
+
+            else if (Operation == "or")
+            {
+                Result = WytwarzanieOprogramowania.Calc.OR(Convert.ToInt64(First), Convert.ToInt64(SecondNumber));
+                textBox2.Text = Convert.ToString(Result);
+                First = Result;
+            }
+
+            else if (Operation == "xor")
+            {
+                Result = WytwarzanieOprogramowania.Calc.XOR(Convert.ToInt64(First), Convert.ToInt64(SecondNumber));
+                textBox2.Text = Convert.ToString(Result);
+                First = Result;
+            }
+
+            else if (Operation == "and")
+            {
+                Result = WytwarzanieOprogramowania.Calc.AND(Convert.ToInt64(First), Convert.ToInt64(SecondNumber));
+                textBox2.Text = Convert.ToString(Result);
+                First = Result;
+            }
+            else if (Operation == "<<")
+            {
+                Result = WytwarzanieOprogramowania.Calc.Lsh(Convert.ToInt64(First), Convert.ToInt32(SecondNumber));
+                textBox2.Text = Convert.ToString(Result);
+                First = Result;
+            }
+
+            else if (Operation == ">>")
+            {
+                Result = WytwarzanieOprogramowania.Calc.Rsh(Convert.ToInt64(First), Convert.ToInt32(SecondNumber));
+                textBox2.Text = Convert.ToString(Result);
+                First = Result;
+            }
         }
 
        
@@ -438,42 +472,104 @@ namespace Calculator
 
         private void Or_Click(object sender, EventArgs e)
         {
+            if (Operation == "0")
+            {
+                First = Convert.ToInt64(textBox2.Text);
+                textBox2.Text = "0";
+                Operation = "or";
+            }
+            else
+            {
+                holder = Convert.ToInt64(textBox2.Text);
+                textBox2.Text = "0";
+                First = WytwarzanieOprogramowania.Calc.OR(Convert.ToInt64(First), Convert.ToInt64(holder));
 
+            }
         }
 
         private void Xor_Click(object sender, EventArgs e)
         {
+            if (Operation == "0")
+            {
+                First = Convert.ToInt64(textBox2.Text);
+                textBox2.Text = "0";
+                Operation = "xor";
+            }
+            else
+            {
+                holder = Convert.ToInt64(textBox2.Text);
+                textBox2.Text = "0";
+                First = WytwarzanieOprogramowania.Calc.XOR(Convert.ToInt64(First), Convert.ToInt64(holder));
 
+            }
         }
 
         private void Lsh_Click(object sender, EventArgs e)
         {
+            if (Operation == "0")
+            {
+                First = Convert.ToInt64(textBox2.Text);
+                textBox2.Text = "0";
+                Operation = "<<";
+            }
+            else
+            {
+                holder = Convert.ToInt64(textBox2.Text);
+                textBox2.Text = "0";
+                First = WytwarzanieOprogramowania.Calc.Lsh(Convert.ToInt64(First), Convert.ToInt32(holder));
 
+            }
         }
 
         private void Rsh_Click(object sender, EventArgs e)
         {
+            if (Operation == "0")
+            {
+                First = Convert.ToInt64(textBox2.Text);
+                textBox2.Text = "0";
+                Operation = ">>";
+            }
+            else
+            {
+                holder = Convert.ToInt64(textBox2.Text);
+                textBox2.Text = "0";
+                First = WytwarzanieOprogramowania.Calc.Rsh(Convert.ToInt64(First), Convert.ToInt32(holder));
 
+            }
         }
 
         private void Not_Click(object sender, EventArgs e)
         {
-
+            long Result;
+            Result = WytwarzanieOprogramowania.Calc.NOT(Convert.ToInt64(textBox2.Text));
+            textBox2.Text = Convert.ToString(Result);
         }
 
         private void And_Click(object sender, EventArgs e)
         {
+            if (Operation == "0")
+            {
+                First = Convert.ToInt64(textBox2.Text);
+                textBox2.Text = "0";
+                Operation = "and";
+            }
+            else
+            {
+                holder = Convert.ToInt64(textBox2.Text);
+                textBox2.Text = "0";
+                First = WytwarzanieOprogramowania.Calc.AND(Convert.ToInt64(First), Convert.ToInt64(holder));
 
+            }
         }
-
+        long pam = WytwarzanieOprogramowania.Calc.pamiec;
         private void MC_Click(object sender, EventArgs e)
         {
-
+            pam=WytwarzanieOprogramowania.Calc.MC(pam);
         }
 
         private void MR_Click(object sender, EventArgs e)
         {
-
+            textBox2.Text = Convert.ToString(pam);
         }
 
         private void MS_Click(object sender, EventArgs e)
@@ -483,12 +579,12 @@ namespace Calculator
 
         private void Mplus_Click(object sender, EventArgs e)
         {
-
+            pam=WytwarzanieOprogramowania.Calc.Mplus(Convert.ToInt64(textBox2.Text),pam);
         }
 
         private void Mminus_Click(object sender, EventArgs e)
         {
-
+            pam=WytwarzanieOprogramowania.Calc.Mminus(Convert.ToInt64(textBox2.Text), pam);
         }
     }
 }

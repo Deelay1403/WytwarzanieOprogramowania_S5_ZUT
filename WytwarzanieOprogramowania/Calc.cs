@@ -99,7 +99,7 @@ namespace WytwarzanieOprogramowania
         public static long Rol(sbyte a) => a << 1;
         public static long Ror(sbyte a) => a >> 1;
 
-        public static long pamiec;
+        public static long pamiec=0;
         public static long word=0;
         public static string text;
         public static long C(long a)=> a = 0;
