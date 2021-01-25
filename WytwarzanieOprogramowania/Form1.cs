@@ -429,17 +429,17 @@ namespace Calculator
         private void CE_Click(object sender, EventArgs e)
         {
             string Result;
-            Result=WytwarzanieOprogramowania.Calc.CE(textBox2.Text);
+            Result=WytwarzanieOprogramowania.Calc.CE();
             textBox2.Text = Convert.ToString(Result);
         }
 
         private void Clear_Click(object sender, EventArgs e)
         {
             long Result;
-            Result = WytwarzanieOprogramowania.Calc.C(Convert.ToInt64(textBox2.Text));
+            Result = WytwarzanieOprogramowania.Calc.C();
             textBox2.Text = Convert.ToString(Result);
             
-            Result = WytwarzanieOprogramowania.Calc.C(Convert.ToInt64(First));
+            Result = WytwarzanieOprogramowania.Calc.C();
             textBox2.Text = Convert.ToString(Result);
             Operation = "0";
 
@@ -564,7 +564,7 @@ namespace Calculator
         long pam = WytwarzanieOprogramowania.Calc.pamiec;
         private void MC_Click(object sender, EventArgs e)
         {
-            pam=WytwarzanieOprogramowania.Calc.MC(pam);
+            WytwarzanieOprogramowania.Calc.MC(pam);
         }
 
         private void MR_Click(object sender, EventArgs e)
@@ -579,7 +579,11 @@ namespace Calculator
 
         private void Mplus_Click(object sender, EventArgs e)
         {
-            pam=WytwarzanieOprogramowania.Calc.Mplus(Convert.ToInt64(textBox2.Text),pam);
+            if (WytwarzanieOprogramowania.Calc.pamiec != 0)
+            {
+                textBox2.Text = WytwarzanieOprogramowania.Calc.Mplus(Convert.ToInt64(textBox2.Text)).ToString();
+            }
+            WytwarzanieOprogramowania.Calc.Mplus(Convert.ToInt64(textBox2.Text));
         }
 
         private void Mminus_Click(object sender, EventArgs e)
