@@ -117,632 +117,302 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;Not.Name" xml:space="preserve">
-    <value>Not</value>
-  </data>
-  <data name="Lsh.Text" xml:space="preserve">
-    <value>Lsh</value>
-  </data>
-  <data name="DEC.Text" xml:space="preserve">
-    <value>DEC</value>
-  </data>
-  <data name="&gt;&gt;osiem.Name" xml:space="preserve">
-    <value>osiem</value>
-  </data>
-  <data name="HEX.Text" xml:space="preserve">
-    <value>HEX</value>
-  </data>
-  <data name="C.Text" xml:space="preserve">
-    <value>C</value>
-  </data>
-  <data name="&gt;&gt;plus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="radioButton7.Text" xml:space="preserve">
-    <value>WORD</value>
-  </data>
-  <data name="&gt;&gt;razy.Name" xml:space="preserve">
-    <value>razy</value>
-  </data>
-  <data name="And.Text" xml:space="preserve">
-    <value>And</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="procent.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 163</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="textBox2.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="DEC.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;dziewiec.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="piec.Text" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MR.ZOrder" xml:space="preserve">
-    <value>39</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>445, 312</value>
-  </data>
-  <data name="&gt;&gt;word_btn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="OCT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 40</value>
-  </data>
-  <data name="MS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;Not.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="piec.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;MC.Name" xml:space="preserve">
-    <value>MC</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 88</value>
-  </data>
-  <data name="B.Text" xml:space="preserve">
-    <value>B</value>
-  </data>
-  <data name="przecinek.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="A.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;dwa.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;radioButton7.Name" xml:space="preserve">
-    <value>radioButton7</value>
-  </data>
-  <data name="strzalka.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="Xor.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="B.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="osiem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;radioButton7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;B.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="minus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="osiem.Text" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;radioButton5.Name" xml:space="preserve">
-    <value>radioButton5</value>
-  </data>
-  <data name="&gt;&gt;Mod.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;word_btn.Name" xml:space="preserve">
-    <value>word_btn</value>
-  </data>
-  <data name="Pnawias.Text" xml:space="preserve">
-    <value>)</value>
-  </data>
-  <data name="BIN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 17</value>
-  </data>
-  <data name="&gt;&gt;osiem.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="dziewiec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 163</value>
-  </data>
-  <data name="&gt;&gt;Xor.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;plus.Name" xml:space="preserve">
-    <value>plus</value>
-  </data>
-  <data name="&gt;&gt;OCT.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="HEX.TabIndex" type="System.Int32, mscorlib">
-    <value>57</value>
-  </data>
-  <data name="&gt;&gt;Clear.Name" xml:space="preserve">
-    <value>Clear</value>
-  </data>
-  <data name="ulamek.Text" xml:space="preserve">
-    <value>1/x</value>
-  </data>
-  <data name="dword_btn.TabIndex" type="System.Int32, mscorlib">
-    <value>59</value>
-  </data>
-  <data name="Clear.Text" xml:space="preserve">
-    <value>c</value>
-  </data>
-  <data name="BIN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 19</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 111</value>
-  </data>
-  <data name="&gt;&gt;Or.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;B.Name" xml:space="preserve">
-    <value>B</value>
-  </data>
-  <data name="Clear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;radioButton5.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;bajt_btn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Mplus.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Pnawias.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;plusMinus.Name" xml:space="preserve">
-    <value>plusMinus</value>
-  </data>
-  <data name="&gt;&gt;rownosc.Name" xml:space="preserve">
-    <value>rownosc</value>
-  </data>
-  <data name="Ror.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="MR.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="cztery.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="&gt;&gt;C.Name" xml:space="preserve">
-    <value>C</value>
-  </data>
-  <data name="rownosc.Text" xml:space="preserve">
-    <value>=</value>
-  </data>
-  <data name="&gt;&gt;Lsh.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cztery.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="qword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 18</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 111</value>
-  </data>
-  <data name="&gt;&gt;Lnawias.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="radioButton6.Text" xml:space="preserve">
-    <value>DWORD</value>
-  </data>
-  <data name="&gt;&gt;E.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="And.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;And.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;podzielic.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ulamek.Name" xml:space="preserve">
-    <value>ulamek</value>
-  </data>
-  <data name="przecinek.Text" xml:space="preserve">
-    <value>,</value>
-  </data>
-  <data name="&gt;&gt;dword_btn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Ror.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;CE.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Mplus.ZOrder" xml:space="preserve">
-    <value>37</value>
-  </data>
-  <data name="dwa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 237</value>
-  </data>
-  <data name="&gt;&gt;strzalka.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;plusMinus.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;procent.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="F.Text" xml:space="preserve">
-    <value>F</value>
-  </data>
-  <data name="A.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;Rsh.Name" xml:space="preserve">
-    <value>Rsh</value>
-  </data>
-  <data name="radioButton6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 13</value>
-  </data>
-  <data name="dziewiec.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="&gt;&gt;dwa.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;jeden.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;trzy.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;jeden.Name" xml:space="preserve">
-    <value>jeden</value>
+  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>449, 67</value>
   </data>
   <data name="Lnawias.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 122</value>
+    <value>88, 122</value>
   </data>
-  <data name="&gt;&gt;D.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="E.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;C.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="CE.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;pierwiastek.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;F.Name" xml:space="preserve">
-    <value>F</value>
+  <data name="button14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 186</value>
   </data>
   <data name="button14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>8, 8</value>
+    <value>10, 8</value>
   </data>
-  <data name="&gt;&gt;HEX.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="RoL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 163</value>
   </data>
-  <data name="&gt;&gt;przecinek.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="Xor.Text" xml:space="preserve">
-    <value>Xor</value>
-  </data>
-  <data name="Rsh.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 237</value>
-  </data>
-  <data name="&gt;&gt;piec.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="razy.Text" xml:space="preserve">
-    <value>*</value>
-  </data>
-  <data name="And.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 274</value>
-  </data>
-  <data name="rownosc.TabIndex" type="System.Int32, mscorlib">
-    <value>53</value>
-  </data>
-  <data name="&gt;&gt;razy.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="Or.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 200</value>
   </data>
   <data name="Lsh.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 237</value>
+    <value>88, 237</value>
   </data>
-  <data name="D.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
+  <data name="Not.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 274</value>
   </data>
-  <data name="&gt;&gt;Xor.ZOrder" xml:space="preserve">
-    <value>35</value>
+  <data name="Mod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 85</value>
   </data>
-  <data name="procent.Text" xml:space="preserve">
-    <value>%</value>
+  <data name="A.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 85</value>
   </data>
-  <data name="blank_button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 85</value>
+  <data name="MC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 85</value>
   </data>
-  <data name="DEC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 17</value>
+  <data name="MR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 85</value>
   </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>49</value>
+  <data name="MS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 85</value>
   </data>
-  <data name="&gt;&gt;BIN.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="Mplus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 85</value>
   </data>
-  <data name="razy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="plusMinus.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;Lsh.ZOrder" xml:space="preserve">
-    <value>44</value>
-  </data>
-  <data name="CE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;jeden.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
-  </data>
-  <data name="B.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;Not.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;word_btn.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Mminus.ZOrder" xml:space="preserve">
-    <value>36</value>
-  </data>
-  <data name="minus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 237</value>
+  <data name="Mminus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 85</value>
   </data>
   <data name="Xor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 200</value>
+    <value>135, 200</value>
   </data>
-  <data name="&gt;&gt;rownosc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HEX.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="OCT.TabIndex" type="System.Int32, mscorlib">
-    <value>55</value>
-  </data>
-  <data name="&gt;&gt;radioButton8.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="cztery.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="pierwiastek.Text" xml:space="preserve">
-    <value>√</value>
-  </data>
-  <data name="&gt;&gt;MS.ZOrder" xml:space="preserve">
-    <value>38</value>
-  </data>
-  <data name="trzy.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
-  </data>
-  <data name="&gt;&gt;jeden.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBox2.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="BIN.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;cztery.Name" xml:space="preserve">
-    <value>cztery</value>
-  </data>
-  <data name="&gt;&gt;Pnawias.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;qword.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="CE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 122</value>
-  </data>
-  <data name="cztery.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 200</value>
-  </data>
-  <data name="&gt;&gt;A.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;przecinek.Name" xml:space="preserve">
-    <value>przecinek</value>
-  </data>
-  <data name="A.Text" xml:space="preserve">
-    <value>A</value>
+  <data name="Ror.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 163</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="textBox2.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
+  <data name="B.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
   </data>
-  <data name="&gt;&gt;dwa.Name" xml:space="preserve">
-    <value>dwa</value>
+  <data name="B.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 122</value>
   </data>
-  <data name="&gt;&gt;MR.Name" xml:space="preserve">
-    <value>MR</value>
+  <data name="Rsh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 237</value>
   </data>
-  <data name="radioButton7.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
+  <data name="And.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 274</value>
   </data>
-  <data name="strzalka.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
+  <data name="Pnawias.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 122</value>
+  </data>
+  <data name="strzalka.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 122</value>
+  </data>
+  <data name="CE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 122</value>
+  </data>
+  <data name="Clear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 122</value>
+  </data>
+  <data name="Clear.Text" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="plusMinus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 122</value>
+  </data>
+  <data name="pierwiastek.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 122</value>
+  </data>
+  <data name="D.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 200</value>
+  </data>
+  <data name="E.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 237</value>
+  </data>
+  <data name="F.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 274</value>
+  </data>
+  <data name="procent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 163</value>
+  </data>
+  <data name="C.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 163</value>
+  </data>
+  <data name="siedem.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="siedem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 163</value>
+  </data>
+  <data name="osiem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 163</value>
+  </data>
+  <data name="dziewiec.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 163</value>
+  </data>
+  <data name="podzielic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 163</value>
+  </data>
+  <data name="cztery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 200</value>
+  </data>
+  <data name="jeden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 237</value>
+  </data>
+  <data name="zero.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 274</value>
+  </data>
+  <data name="piec.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 200</value>
+  </data>
+  <data name="dwa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 237</value>
   </data>
   <data name="szesc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 200</value>
+    <value>322, 200</value>
   </data>
-  <data name="ulamek.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
+  <data name="trzy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 237</value>
   </data>
-  <data name="radioButton5.TabIndex" type="System.Int32, mscorlib">
-    <value>58</value>
+  <data name="przecinek.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 274</value>
   </data>
-  <data name="button14.Text" xml:space="preserve">
-    <value>button14</value>
+  <data name="razy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 200</value>
   </data>
-  <data name="szesc.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
+  <data name="minus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 237</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="plus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 274</value>
   </data>
-  <data name="&gt;&gt;podzielic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ulamek.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 200</value>
   </data>
-  <data name="&gt;&gt;Ror.ZOrder" xml:space="preserve">
-    <value>34</value>
+  <data name="rownosc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 237</value>
   </data>
-  <data name="&gt;&gt;dword_btn.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="BIN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7pt</value>
   </data>
-  <data name="&gt;&gt;button14.ZOrder" xml:space="preserve">
-    <value>47</value>
+  <data name="BIN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 23</value>
   </data>
-  <data name="radioButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 8</value>
+  <data name="BIN.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
   </data>
-  <data name="C.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
+  <data name="BIN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 17</value>
   </data>
-  <data name="&gt;&gt;CE.ZOrder" xml:space="preserve">
-    <value>28</value>
+  <data name="OCT.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7pt</value>
   </data>
-  <data name="&gt;&gt;Mplus.Name" xml:space="preserve">
-    <value>Mplus</value>
+  <data name="OCT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 42</value>
   </data>
-  <data name="przecinek.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
+  <data name="OCT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
   </data>
-  <data name="radioButton8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 83</value>
+  <data name="OCT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 17</value>
   </data>
-  <data name="trzy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
+  <data name="DEC.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7pt</value>
   </data>
-  <data name="rownosc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 68</value>
+  <data name="DEC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 61</value>
   </data>
-  <data name="&gt;&gt;A.ZOrder" xml:space="preserve">
-    <value>41</value>
+  <data name="DEC.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
   </data>
-  <data name="Pnawias.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
+  <data name="HEX.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7pt</value>
+  </data>
+  <data name="HEX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 80</value>
+  </data>
+  <data name="HEX.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
   </data>
   <data name="HEX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 17</value>
+    <value>46, 17</value>
   </data>
-  <data name="Lsh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="jeden.Text" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;razy.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="qword.TabIndex" type="System.Int32, mscorlib">
-    <value>58</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>461, 351</value>
-  </data>
-  <data name="cztery.Text" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;D.Name" xml:space="preserve">
-    <value>D</value>
-  </data>
-  <data name="dwa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="razy.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
-  </data>
-  <data name="&gt;&gt;Lnawias.Name" xml:space="preserve">
-    <value>Lnawias</value>
-  </data>
-  <data name="radioButton6.AutoSize" type="System.Boolean, mscorlib">
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Qword.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;szesc.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="Qword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7pt</value>
   </data>
-  <data name="&gt;&gt;OCT.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Qword.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="radioButton8.TabIndex" type="System.Int32, mscorlib">
-    <value>61</value>
+  <data name="Qword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 17</value>
   </data>
-  <data name="&gt;&gt;Rsh.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Qword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
   </data>
-  <data name="procent.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Qword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 17</value>
+  </data>
+  <data name="Qword.Text" xml:space="preserve">
+    <value>QWORD</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 85</value>
+  </data>
+  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 109</value>
+  </data>
+  <data name="bajt_btn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bajt_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7pt</value>
+  </data>
+  <data name="bajt_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="bajt_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 17</value>
+  </data>
+  <data name="bajt_btn.Text" xml:space="preserve">
+    <value>BAJT</value>
+  </data>
+  <data name="word_btn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="word_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7pt</value>
+  </data>
+  <data name="word_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="word_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 17</value>
+  </data>
+  <data name="word_btn.Text" xml:space="preserve">
+    <value>WORD</value>
+  </data>
+  <data name="dword_btn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="dword_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7pt</value>
+  </data>
+  <data name="dword_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="dword_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 17</value>
+  </data>
+  <data name="dword_btn.Text" xml:space="preserve">
+    <value>DWORD</value>
+  </data>
+  <data name="groupBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="groupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 105</value>
+  </data>
+  <data name="blank_button.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="blank_button.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 31</value>
   </data>
-  <data name="Ror.Text" xml:space="preserve">
-    <value>RoR</value>
-  </data>
-  <data name="&gt;&gt;radioButton6.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="OCT.Text" xml:space="preserve">
-    <value>OCT</value>
-  </data>
-  <data name="dword_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 36</value>
-  </data>
-  <data name="&gt;&gt;F.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="plusMinus.Text" xml:space="preserve">
-    <value>±</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>465, 312</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4245,967 +3915,10 @@
         AAA=
 </value>
   </data>
-  <data name="Rsh.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="zero.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 274</value>
-  </data>
-  <data name="pierwiastek.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;radioButton5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RoL.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;dword.Name" xml:space="preserve">
-    <value>dword</value>
-  </data>
-  <data name="Mplus.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="Or.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;pierwiastek.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="dziewiec.Text" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;button14.Name" xml:space="preserve">
-    <value>button14</value>
-  </data>
-  <data name="pierwiastek.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;dziewiec.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;Or.Name" xml:space="preserve">
-    <value>Or</value>
-  </data>
-  <data name="MR.Text" xml:space="preserve">
-    <value>MR</value>
-  </data>
-  <data name="radioButton6.TabIndex" type="System.Int32, mscorlib">
-    <value>59</value>
-  </data>
-  <data name="Not.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;BIN.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;podzielic.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;MS.Name" xml:space="preserve">
-    <value>MS</value>
-  </data>
-  <data name="Pnawias.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="przecinek.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 274</value>
-  </data>
-  <data name="E.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 237</value>
-  </data>
-  <data name="razy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 200</value>
-  </data>
-  <data name="Mplus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 85</value>
-  </data>
-  <data name="&gt;&gt;MS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Mminus.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Ror.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;szesc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="zero.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="jeden.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 237</value>
-  </data>
-  <data name="Lnawias.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="Clear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 122</value>
-  </data>
-  <data name="&gt;&gt;radioButton5.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;trzy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button9.Name" xml:space="preserve">
-    <value>button9</value>
-  </data>
-  <data name="&gt;&gt;dword.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="Mplus.Text" xml:space="preserve">
-    <value>M+</value>
-  </data>
-  <data name="&gt;&gt;button14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="MS.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 200</value>
-  </data>
-  <data name="&gt;&gt;OCT.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="strzalka.Text" xml:space="preserve">
-    <value>&lt;--</value>
-  </data>
-  <data name="piec.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="&gt;&gt;dword.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;zero.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Clear.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;RoL.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="D.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 200</value>
-  </data>
-  <data name="&gt;&gt;MC.ZOrder" xml:space="preserve">
-    <value>40</value>
-  </data>
-  <data name="&gt;&gt;radioButton8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Or.ZOrder" xml:space="preserve">
-    <value>45</value>
-  </data>
-  <data name="radioButton7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="radioButton7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 6.5pt</value>
-  </data>
-  <data name="&gt;&gt;DEC.Name" xml:space="preserve">
-    <value>DEC</value>
-  </data>
-  <data name="&gt;&gt;ulamek.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="CE.Text" xml:space="preserve">
-    <value>CE</value>
-  </data>
-  <data name="&gt;&gt;MR.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Or.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="RoL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="podzielic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="plus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 274</value>
-  </data>
-  <data name="button9.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="&gt;&gt;rownosc.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Lsh.Name" xml:space="preserve">
-    <value>Lsh</value>
-  </data>
-  <data name="&gt;&gt;DEC.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;B.ZOrder" xml:space="preserve">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;Qword.Name" xml:space="preserve">
-    <value>Qword</value>
-  </data>
-  <data name="&gt;&gt;Xor.Name" xml:space="preserve">
-    <value>Xor</value>
-  </data>
-  <data name="&gt;&gt;cztery.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;strzalka.Name" xml:space="preserve">
-    <value>strzalka</value>
-  </data>
-  <data name="&gt;&gt;podzielic.Name" xml:space="preserve">
-    <value>podzielic</value>
-  </data>
-  <data name="&gt;&gt;qword.Name" xml:space="preserve">
-    <value>qword</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
-  </data>
-  <data name="&gt;&gt;przecinek.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rownosc.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;F.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="dword.TabIndex" type="System.Int32, mscorlib">
-    <value>59</value>
-  </data>
-  <data name="textBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 25pt</value>
-  </data>
-  <data name="&gt;&gt;Qword.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="strzalka.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 122</value>
-  </data>
-  <data name="&gt;&gt;minus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Clear.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="E.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="minus.TabIndex" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="&gt;&gt;plus.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;plusMinus.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;Mminus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="radioButton8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 16</value>
-  </data>
-  <data name="&gt;&gt;radioButton7.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;And.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;plus.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;BIN.Name" xml:space="preserve">
-    <value>BIN</value>
-  </data>
-  <data name="minus.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="F.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 274</value>
-  </data>
-  <data name="&gt;&gt;ulamek.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="plus.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="podzielic.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="MC.Text" xml:space="preserve">
-    <value>MC</value>
-  </data>
-  <data name="siedem.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="radioButton7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 16</value>
-  </data>
-  <data name="MC.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="Lnawias.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;D.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="Or.Text" xml:space="preserve">
-    <value>Or</value>
-  </data>
-  <data name="&gt;&gt;CE.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="podzielic.Text" xml:space="preserve">
-    <value>/</value>
-  </data>
-  <data name="plus.Text" xml:space="preserve">
-    <value>+</value>
-  </data>
-  <data name="radioButton5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;bajt_btn.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="button14.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;szesc.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="Or.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="zero.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Clear.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;Mod.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="word_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 55</value>
-  </data>
-  <data name="&gt;&gt;procent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;qword.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Mod.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="podzielic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 163</value>
-  </data>
-  <data name="F.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;strzalka.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="OCT.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;siedem.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;OCT.Name" xml:space="preserve">
-    <value>OCT</value>
-  </data>
-  <data name="DEC.TabIndex" type="System.Int32, mscorlib">
-    <value>56</value>
-  </data>
-  <data name="&gt;&gt;C.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 85</value>
-  </data>
-  <data name="&gt;&gt;BIN.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Mod.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="B.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>428, 67</value>
-  </data>
-  <data name="procent.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;Qword.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;procent.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Mminus.Name" xml:space="preserve">
-    <value>Mminus</value>
-  </data>
-  <data name="radioButton6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 33</value>
-  </data>
-  <data name="radioButton5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 13</value>
-  </data>
-  <data name="Mod.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 85</value>
-  </data>
-  <data name="jeden.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="plus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;blank_button.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="dwa.Text" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;szesc.Name" xml:space="preserve">
-    <value>szesc</value>
-  </data>
-  <data name="&gt;&gt;DEC.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bajt_btn.Name" xml:space="preserve">
-    <value>bajt_btn</value>
-  </data>
-  <data name="radioButton7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 58</value>
-  </data>
-  <data name="radioButton6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 6pt</value>
-  </data>
-  <data name="&gt;&gt;B.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MC.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="szesc.Text" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;Mod.ZOrder" xml:space="preserve">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;RoL.ZOrder" xml:space="preserve">
-    <value>46</value>
-  </data>
-  <data name="&gt;&gt;MS.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="A.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 85</value>
-  </data>
-  <data name="&gt;&gt;Qword.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="OCT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 17</value>
-  </data>
-  <data name="&gt;&gt;RoL.Name" xml:space="preserve">
-    <value>RoL</value>
-  </data>
-  <data name="trzy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 237</value>
-  </data>
-  <data name="blank_button.TabIndex" type="System.Int32, mscorlib">
-    <value>61</value>
-  </data>
-  <data name="MR.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="ulamek.TabIndex" type="System.Int32, mscorlib">
-    <value>52</value>
-  </data>
-  <data name="&gt;&gt;pierwiastek.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;siedem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;blank_button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioButton6.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
-  </data>
-  <data name="MS.Text" xml:space="preserve">
-    <value>MS</value>
-  </data>
-  <data name="&gt;&gt;E.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="zero.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 31</value>
-  </data>
-  <data name="&gt;&gt;Rsh.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="RoL.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="Ror.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 163</value>
-  </data>
-  <data name="radioButton8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 6.5pt</value>
-  </data>
-  <data name="ulamek.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 200</value>
-  </data>
-  <data name="Not.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;procent.Name" xml:space="preserve">
-    <value>procent</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;plusMinus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Lsh.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;HEX.Name" xml:space="preserve">
-    <value>HEX</value>
-  </data>
-  <data name="Qword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 18</value>
-  </data>
-  <data name="&gt;&gt;dword_btn.Name" xml:space="preserve">
-    <value>dword_btn</value>
-  </data>
-  <data name="&gt;&gt;blank_button.Name" xml:space="preserve">
-    <value>blank_button</value>
-  </data>
-  <data name="piec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>255, 200</value>
-  </data>
-  <data name="&gt;&gt;Ror.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;piec.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bajt_btn.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="MS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 85</value>
-  </data>
-  <data name="Mplus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MR.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="Xor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="HEX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 82</value>
-  </data>
-  <data name="&gt;&gt;osiem.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;trzy.Name" xml:space="preserve">
-    <value>trzy</value>
-  </data>
-  <data name="&gt;&gt;A.Name" xml:space="preserve">
-    <value>A</value>
-  </data>
-  <data name="Mod.Text" xml:space="preserve">
-    <value>Mod</value>
-  </data>
-  <data name="osiem.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="&gt;&gt;Lnawias.ZOrder" xml:space="preserve">
-    <value>48</value>
-  </data>
-  <data name="Not.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 274</value>
-  </data>
-  <data name="&gt;&gt;Pnawias.Name" xml:space="preserve">
-    <value>Pnawias</value>
-  </data>
-  <data name="F.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 12</value>
-  </data>
-  <data name="&gt;&gt;And.Name" xml:space="preserve">
-    <value>And</value>
-  </data>
-  <data name="&gt;&gt;Lnawias.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="C.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 163</value>
-  </data>
-  <data name="Or.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 200</value>
-  </data>
-  <data name="&gt;&gt;Ror.Name" xml:space="preserve">
-    <value>Ror</value>
-  </data>
-  <data name="&gt;&gt;minus.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;zero.Name" xml:space="preserve">
-    <value>zero</value>
-  </data>
-  <data name="Lsh.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;minus.Name" xml:space="preserve">
-    <value>minus</value>
-  </data>
-  <data name="MR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 85</value>
-  </data>
-  <data name="&gt;&gt;CE.Name" xml:space="preserve">
-    <value>CE</value>
-  </data>
-  <data name="szesc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;C.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="Rsh.Text" xml:space="preserve">
-    <value>Rsh</value>
-  </data>
-  <data name="&gt;&gt;piec.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dword.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 186</value>
-  </data>
-  <data name="osiem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 163</value>
-  </data>
-  <data name="&gt;&gt;Clear.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;And.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="radioButton5.Text" xml:space="preserve">
-    <value>QWORD</value>
-  </data>
-  <data name="HEX.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="word_btn.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
-  </data>
-  <data name="Rsh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="rownosc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 237</value>
-  </data>
-  <data name="&gt;&gt;strzalka.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;Rsh.ZOrder" xml:space="preserve">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;osiem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="Mminus.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;ulamek.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="B.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 122</value>
-  </data>
-  <data name="&gt;&gt;Mplus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="RoL.Text" xml:space="preserve">
-    <value>RoL</value>
-  </data>
-  <data name="&gt;&gt;radioButton7.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button14.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="siedem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="radioButton5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 6pt</value>
-  </data>
-  <data name="dword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 36</value>
-  </data>
-  <data name="MC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="Qword.TabIndex" type="System.Int32, mscorlib">
-    <value>58</value>
-  </data>
-  <data name="siedem.Text" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="Mminus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 85</value>
-  </data>
-  <data name="B.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;dword_btn.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="bajt_btn.TabIndex" type="System.Int32, mscorlib">
-    <value>61</value>
-  </data>
-  <data name="radioButton8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;piec.Name" xml:space="preserve">
-    <value>piec</value>
-  </data>
-  <data name="&gt;&gt;dziewiec.Name" xml:space="preserve">
-    <value>dziewiec</value>
-  </data>
-  <data name="&gt;&gt;button9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pierwiastek.Name" xml:space="preserve">
-    <value>pierwiastek</value>
-  </data>
-  <data name="&gt;&gt;siedem.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="BIN.Text" xml:space="preserve">
-    <value>BIN</value>
-  </data>
-  <data name="&gt;&gt;E.Name" xml:space="preserve">
-    <value>E</value>
-  </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>461, 351</value>
+    <value>481, 351</value>
   </data>
-  <data name="&gt;&gt;F.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Kalkulator</value>
   </data>
-  <data name="&gt;&gt;HEX.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="button9.TabIndex" type="System.Int32, mscorlib">
-    <value>61</value>
-  </data>
-  <data name="Lnawias.Text" xml:space="preserve">
-    <value>(</value>
-  </data>
-  <data name="&gt;&gt;E.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="RoL.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 163</value>
-  </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;razy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="dziewiec.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;cztery.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;przecinek.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Not.ZOrder" xml:space="preserve">
-    <value>43</value>
-  </data>
-  <data name="&gt;&gt;Mod.Name" xml:space="preserve">
-    <value>Mod</value>
-  </data>
-  <data name="And.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="DEC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 61</value>
-  </data>
-  <data name="C.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="D.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="bajt_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 74</value>
-  </data>
-  <data name="Mminus.Text" xml:space="preserve">
-    <value>M-</value>
-  </data>
-  <data name="jeden.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="&gt;&gt;radioButton8.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;siedem.Name" xml:space="preserve">
-    <value>siedem</value>
-  </data>
-  <data name="&gt;&gt;D.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioButton8.Name" xml:space="preserve">
-    <value>radioButton8</value>
-  </data>
-  <data name="&gt;&gt;qword.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;radioButton6.Name" xml:space="preserve">
-    <value>radioButton6</value>
-  </data>
-  <data name="&gt;&gt;MC.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="plusMinus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;zero.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="dwa.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  </data>
-  <data name="plusMinus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 122</value>
-  </data>
-  <data name="siedem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 163</value>
-  </data>
-  <data name="&gt;&gt;Xor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="radioButton8.Text" xml:space="preserve">
-    <value>BAJT</value>
-  </data>
-  <data name="&gt;&gt;zero.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>59</value>
-  </data>
-  <data name="&gt;&gt;dwa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="MC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 85</value>
-  </data>
-  <data name="D.Text" xml:space="preserve">
-    <value>D</value>
-  </data>
-  <data name="&gt;&gt;dziewiec.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="trzy.Text" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;word_btn.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="Pnawias.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 122</value>
-  </data>
-  <data name="&gt;&gt;radioButton6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Pnawias.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="BIN.TabIndex" type="System.Int32, mscorlib">
-    <value>54</value>
-  </data>
-  <data name="E.Text" xml:space="preserve">
-    <value>E</value>
-  </data>
-  <data name="&gt;&gt;minus.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;DEC.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="pierwiastek.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 122</value>
-  </data>
-  <data name="&gt;&gt;blank_button.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Not.Text" xml:space="preserve">
-    <value>Not</value>
-  </data>
-  <data name="Mminus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 31</value>
-  </data>
-  <data name="&gt;&gt;trzy.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="textBox2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>pl</value>
-  </metadata>
 </root>

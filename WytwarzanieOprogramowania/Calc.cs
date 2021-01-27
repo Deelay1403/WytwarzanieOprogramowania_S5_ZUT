@@ -14,30 +14,15 @@ namespace WytwarzanieOprogramowania
 
         //Sekcja dodawania
         public static long Add(dynamic a, dynamic b) => a + b;
-/*        public static int Add(int a, int b) => a + b;
-        public static short Add(short a, short b) => (short)(a + b);
-        public static sbyte Add(sbyte a, sbyte b) => (sbyte)(a + b);
-        public static double Add(double a, double b) => a + b;*/
+
         //Sekcja odejmowania
         public static long Sub(dynamic a, dynamic b) => a - b;
-/*        public static int Sub(int a, int b) => a - b;
-        public static short Sub(short a, short b) => (short)(a - b);
-        public static sbyte Sub(sbyte a, sbyte b) => (sbyte)(a - b);
-        public static double Sub(double a, double b) => a - b;*/
 
         //Sekcja mnożenia
-        public static long Multiply(dynamic a, dynamic b) => a * b;
-/*        public static int Multiply(int a, int b) => a * b;
-        public static short Multiply(short a, short b) => (short)(a * b);
-        public static sbyte Multiply(sbyte a, sbyte b) => (sbyte)(a * b);
-        public static double Multiply(double a, double b) => a * b;
-*/
+        public static dynamic Multiply(dynamic a, dynamic b) => a * b;
+
         //Sekcja dzielenia
         public static long Divide(dynamic a, dynamic b) => a / b;
-        /*        public static int Divide(int a, int b) => a / b;
-                public static short Divide(short a, short b) => (short)(a / b);
-                public static sbyte Divide(sbyte a, sbyte b) => (sbyte)(a / b);
-                public static double Divide(double a, double b) => a / b;*/
 
         /*konwersja na inny system  */
         public static string convert(dynamic n, int sys)
@@ -45,47 +30,31 @@ namespace WytwarzanieOprogramowania
             if (n is sbyte)
                 return Convert.ToString((byte)n, sys);
             return Convert.ToString(n, sys);
+
         }
-/*        public static string convert(int n, int sys) => Convert.ToString(n, sys);
-        public static string convert(short n, int sys) => Convert.ToString(n, sys);*//*
-        public static string convert(sbyte n, int sys) => Convert.ToString((byte)n, sys);*/
+        public static string convertToDec(string n, int sys)
+        {
+            return Convert.ToInt64(n, sys).ToString();
+        }
 
         //Sekcja OR
         public static long OR(dynamic a, dynamic b) => a | b;
-/*        public static int OR(int a, int b) => a | b;
-        public static short OR(short a, short b) => (short)(a | b);
-        public static sbyte OR(sbyte a, sbyte b) => (sbyte)(a | b);*/
 
         //Sekcja AND
         public static long AND(dynamic a, dynamic b) => a & b;
-/*        public static int AND(int a, int b) => a & b;
-        public static short AND(short a, short b) => (short)(a & b);
-        public static sbyte AND(sbyte a, sbyte b) => (sbyte)(a & b);*/
 
         //XOR
         public static long XOR(dynamic a, dynamic b) => a ^ b;
-/*        public static int XOR(int a, int b) => a ^ b;
-        public static short XOR(short a, short b) => (short)(a ^ b);
-        public static sbyte XOR(sbyte a, sbyte b) => (sbyte)(a ^ b);*/
 
         //NOT
         public static long NOT(dynamic a) => ~a;
-/*        public static int NOT(int a) => ~a;
-        public static short NOT(short a) => (short)~a;
-        public static sbyte NOT(sbyte a) => (sbyte)~a;*/
         
         //Sekcja Lsh
         public static long Lsh(dynamic a, int b) => a << b;
-/*        public static int Lsh(int a, int b) => a << b;
-        public static short Lsh(short a, int b) => (short)(a << b);
-        public static sbyte Lsh(sbyte a, int b) => (sbyte)(a << b);*/
 
         //Sekcja Rsh
         public static long Rsh(dynamic a, int b) => a >> b;
-/*        public static int Rsh(int a, int b) => a >> b;
-        public static short Rsh(short a, int b) => (short)(a >> b);
-        public static sbyte Rsh(sbyte a, int b) => (sbyte)(a >> b);*/
-
+        public static string toString(dynamic a) => Convert.ToString(a);
         /* nowe rzeczy */
         public static long PlusMinus(long a) => -1 * a;
         public static long PlusMinus(int a) => -1 * a;
@@ -100,37 +69,22 @@ namespace WytwarzanieOprogramowania
 
         public static long Rol(dynamic a) => Lsh(a,1);
         public static long Ror(dynamic a) => Rsh(a, 1);
-/*        public static long Rol(int a) => Lsh(a, 1);
-        public static long Ror(int a) => Rsh(a, 1);
-        public static long Rol(short a) => Lsh(a, 1);
-        public static long Ror(short a) => Rsh(a, 1);
-        public static long Rol(sbyte a) => Lsh(a, 1);
-        public static long Ror(sbyte a) => Rsh(a, 1);*/
-
 
         private static long clear_val() => 0;
         public static long C() => clear_val();
-        public static long Mplus(long a) => pamiec + a;
-        public static long Mminus(long a, long pamiec) => pamiec - a;
-        public static long MC(dynamic a) => a = clear_val();
 
         public static string Backspace(string text) => text.Substring(0, text.Length - 1); 
         public static string CE() => "0";
-        public static string MR(long pamiec) => Convert.ToString(pamiec);
+        
         public static sbyte Byte(dynamic b) => Convert.ToSByte((sbyte)(b & ((sbyte)-1)));
-/*        public static sbyte Byte(int b) => Convert.ToSByte(b);
-        public static sbyte Byte(short b) => Convert.ToSByte(b);*/
         public static short Word(dynamic b) => Convert.ToInt16((short)(b & ((short)-1)));
-/*        public static short Word(int b) => Convert.ToInt16(b);
-        public static short Word(sbyte b) => Convert.ToInt16(b);*/
         public static int DWord(dynamic b) => Convert.ToInt32((int)(b & (-1)));
-/*        public static int DWord(short b) => Convert.ToInt32(b);
-        public static int DWord(sbyte b) => Convert.ToInt32(b);*/
         public static long QWord(dynamic b) => Convert.ToInt64((long)(b & ((long)-1)));
-/*        public static long QWord(short b) => Convert.ToInt64(b);
-        public static long QWord(sbyte b) => Convert.ToInt64(b);*/
-       
 
+        // Memory functions
+        public static void Mplus(dynamic a, ref long pamiec) => pamiec = pamiec + a;
+        public static void Mminus(dynamic a, ref long pamiec) => pamiec = pamiec - a;
+        public static void MC(ref long a) => a = clear_val();
 
     }
 

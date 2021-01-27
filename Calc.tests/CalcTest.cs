@@ -6,7 +6,6 @@ namespace CalcTest
     [TestClass]
     public class CalcTest
     {
-        //private Calc calc = new Calc();
         [TestMethod]
         public void addTest()
         {
@@ -30,9 +29,24 @@ namespace CalcTest
             Assert.AreEqual(long.MinValue, Calc.Multiply(long.MaxValue, long.MinValue));
         }
         [TestMethod]
+        public void divideTest()
+        {
+            Assert.AreEqual(1, Calc.Divide(2, 2));
+            Assert.AreEqual(-1, Calc.Divide(-2, 2));
+            Assert.AreEqual(0, Calc.Divide(long.MaxValue, long.MinValue));
+        }
+        [TestMethod]
+        public void edgeValueTest()
+        {
+            Assert.AreEqual(0, Calc.Add(-1, 1));
+            Assert.AreEqual(-2, Calc.Sub(-1, 1));
+            Assert.AreEqual(-1, Calc.Multiply(-1,1));
+            Assert.AreEqual(-1, Calc.Divide(-1,1));
+        }
+        [TestMethod]
         public void decToBinTest()
         {
-            Assert.AreEqual("100", Calc.convert(4,2));
+            Assert.AreEqual("10", Calc.convert(2,2));
             Assert.AreEqual("1111111111111111111111111111111111111111111111111111111111111111", 
                 Calc.convert((long)-1,2));
             Assert.AreEqual("11111111111111111111111111111111",
@@ -69,28 +83,28 @@ namespace CalcTest
                 Calc.convert((sbyte)-1, 16));
         }
         [TestMethod]
-        public void orTest() 
-        {
-            Assert.AreEqual(-1, Calc.OR(0, -1));
-            Assert.AreEqual(-1, Calc.OR(int.MinValue, int.MaxValue));
-        }
-        [TestMethod]
         public void andTest()
         {
             Assert.AreEqual(0, Calc.AND(0, -1));
             Assert.AreEqual(0, Calc.AND(int.MinValue, int.MaxValue));
         }
         [TestMethod]
-        public void xorTest()
+        public void orTest() 
         {
-            Assert.AreEqual(-1, Calc.XOR(0, -1));
-            Assert.AreEqual(-1, Calc.XOR(int.MinValue, int.MaxValue));
+            Assert.AreEqual(-1, Calc.OR(0, -1));
+            Assert.AreEqual(-1, Calc.OR(int.MinValue, int.MaxValue));
         }
         [TestMethod]
         public void notTest()
         {
             Assert.AreEqual(-1, Calc.NOT(0));
             Assert.AreEqual(int.MinValue, Calc.NOT(int.MaxValue));
+        }
+        [TestMethod]
+        public void xorTest()
+        {
+            Assert.AreEqual(-1, Calc.XOR(0, -1));
+            Assert.AreEqual(-1, Calc.XOR(int.MinValue, int.MaxValue));
         }
         [TestMethod]
         public void lshTest()
@@ -140,7 +154,6 @@ namespace CalcTest
             Assert.AreEqual(-1, Calc.Byte(long.MaxValue));
             Assert.AreEqual(0, Calc.Byte(long.MinValue));
             Assert.AreEqual(0, Calc.Byte(int.MinValue));
-            Assert.AreEqual(sbyte.MaxValue, Calc.Byte(sbyte.MaxValue));
         }
         [TestMethod]
         public void wordTest()
@@ -149,7 +162,6 @@ namespace CalcTest
             Assert.AreEqual(-1, Calc.Word(long.MaxValue));
             Assert.AreEqual(0, Calc.Word(long.MinValue));
             Assert.AreEqual(0, Calc.Word(int.MinValue));
-            Assert.AreEqual(short.MaxValue, Calc.Word(short.MaxValue));
         }
         [TestMethod]
         public void dwordTest()

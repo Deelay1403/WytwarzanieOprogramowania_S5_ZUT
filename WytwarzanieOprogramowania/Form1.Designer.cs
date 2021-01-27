@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +29,16 @@ namespace Calculator
             }
             base.Dispose(disposing);
         }
+        protected override void OnPaintBackground(PaintEventArgs e)
+        {
+            using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle,
+                                                                       Color.FromArgb(217, 228, 241),
+                                                                       Color.FromArgb(217, 228, 241),
+                                                                       90F))
+            {
+                e.Graphics.FillRectangle(brush, this.ClientRectangle);
+            }
+        }
 
         #region Kod generowany przez Projektanta formularzy systemu Windows
 
@@ -37,6 +48,7 @@ namespace Calculator
         /// </summary>
         public void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.Lnawias = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
@@ -88,617 +100,451 @@ namespace Calculator
             this.OCT = new System.Windows.Forms.RadioButton();
             this.DEC = new System.Windows.Forms.RadioButton();
             this.HEX = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.Qword = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.button9 = new System.Windows.Forms.Button();
+            this.bajt_btn = new System.Windows.Forms.RadioButton();
+            this.word_btn = new System.Windows.Forms.RadioButton();
+            this.dword_btn = new System.Windows.Forms.RadioButton();
+            this.blank_button = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox2
             // 
+            resources.ApplyResources(this.textBox2, "textBox2");
             this.textBox2.AllowDrop = true;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox2.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBox2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.textBox2.HideSelection = false;
-            this.textBox2.Location = new System.Drawing.Point(12, 12);
-            this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(428, 67);
-            this.textBox2.TabIndex = 0;
-            this.textBox2.Text = "0";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox2.ReadOnly = true;
             // 
             // Lnawias
             // 
-            this.Lnawias.Location = new System.Drawing.Point(71, 122);
+            resources.ApplyResources(this.Lnawias, "Lnawias");
             this.Lnawias.Name = "Lnawias";
-            this.Lnawias.Size = new System.Drawing.Size(41, 31);
-            this.Lnawias.TabIndex = 4;
-            this.Lnawias.Text = "(";
             this.Lnawias.UseVisualStyleBackColor = true;
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(283, 186);
+            resources.ApplyResources(this.button14, "button14");
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(8, 8);
-            this.button14.TabIndex = 6;
-            this.button14.Text = "button14";
             this.button14.UseVisualStyleBackColor = true;
             // 
             // RoL
             // 
-            this.RoL.Location = new System.Drawing.Point(71, 163);
+            resources.ApplyResources(this.RoL, "RoL");
             this.RoL.Name = "RoL";
-            this.RoL.Size = new System.Drawing.Size(41, 31);
-            this.RoL.TabIndex = 9;
-            this.RoL.Text = "RoL";
             this.RoL.UseVisualStyleBackColor = true;
             this.RoL.Click += new System.EventHandler(this.RoL_Click);
             // 
             // Or
             // 
-            this.Or.Location = new System.Drawing.Point(71, 200);
+            resources.ApplyResources(this.Or, "Or");
             this.Or.Name = "Or";
-            this.Or.Size = new System.Drawing.Size(41, 31);
-            this.Or.TabIndex = 10;
-            this.Or.Text = "Or";
             this.Or.UseVisualStyleBackColor = true;
             this.Or.Click += new System.EventHandler(this.Or_Click);
             // 
             // Lsh
             // 
-            this.Lsh.Location = new System.Drawing.Point(71, 237);
+            resources.ApplyResources(this.Lsh, "Lsh");
             this.Lsh.Name = "Lsh";
-            this.Lsh.Size = new System.Drawing.Size(41, 31);
-            this.Lsh.TabIndex = 11;
-            this.Lsh.Text = "Lsh";
             this.Lsh.UseVisualStyleBackColor = true;
             this.Lsh.Click += new System.EventHandler(this.Lsh_Click);
             // 
             // Not
             // 
-            this.Not.Location = new System.Drawing.Point(71, 274);
+            resources.ApplyResources(this.Not, "Not");
             this.Not.Name = "Not";
-            this.Not.Size = new System.Drawing.Size(41, 31);
-            this.Not.TabIndex = 12;
-            this.Not.Text = "Not";
             this.Not.UseVisualStyleBackColor = true;
             this.Not.Click += new System.EventHandler(this.Not_Click);
             // 
             // Mod
             // 
-            this.Mod.Location = new System.Drawing.Point(117, 85);
+            resources.ApplyResources(this.Mod, "Mod");
             this.Mod.Name = "Mod";
-            this.Mod.Size = new System.Drawing.Size(41, 31);
-            this.Mod.TabIndex = 13;
-            this.Mod.Text = "Mod";
             this.Mod.UseVisualStyleBackColor = true;
             this.Mod.Click += new System.EventHandler(this.Mod_Click);
             // 
             // A
             // 
-            this.A.Location = new System.Drawing.Point(164, 85);
+            resources.ApplyResources(this.A, "A");
             this.A.Name = "A";
-            this.A.Size = new System.Drawing.Size(41, 31);
-            this.A.TabIndex = 14;
-            this.A.Text = "A";
             this.A.UseVisualStyleBackColor = true;
+            this.A.Click += new System.EventHandler(this.A_Click);
             // 
             // MC
             // 
-            this.MC.Location = new System.Drawing.Point(211, 85);
+            resources.ApplyResources(this.MC, "MC");
             this.MC.Name = "MC";
-            this.MC.Size = new System.Drawing.Size(41, 31);
-            this.MC.TabIndex = 15;
-            this.MC.Text = "MC";
             this.MC.UseVisualStyleBackColor = true;
             this.MC.Click += new System.EventHandler(this.MC_Click);
             // 
             // MR
             // 
-            this.MR.Location = new System.Drawing.Point(258, 85);
+            resources.ApplyResources(this.MR, "MR");
             this.MR.Name = "MR";
-            this.MR.Size = new System.Drawing.Size(41, 31);
-            this.MR.TabIndex = 16;
-            this.MR.Text = "MR";
             this.MR.UseVisualStyleBackColor = true;
             this.MR.Click += new System.EventHandler(this.MR_Click);
             // 
             // MS
             // 
-            this.MS.Location = new System.Drawing.Point(305, 85);
+            resources.ApplyResources(this.MS, "MS");
             this.MS.Name = "MS";
-            this.MS.Size = new System.Drawing.Size(41, 31);
-            this.MS.TabIndex = 17;
-            this.MS.Text = "MS";
             this.MS.UseVisualStyleBackColor = true;
             this.MS.Click += new System.EventHandler(this.MS_Click);
             // 
             // Mplus
             // 
-            this.Mplus.Location = new System.Drawing.Point(352, 85);
+            resources.ApplyResources(this.Mplus, "Mplus");
             this.Mplus.Name = "Mplus";
-            this.Mplus.Size = new System.Drawing.Size(41, 31);
-            this.Mplus.TabIndex = 18;
-            this.Mplus.Text = "M+";
             this.Mplus.UseVisualStyleBackColor = true;
             this.Mplus.Click += new System.EventHandler(this.Mplus_Click);
             // 
             // Mminus
             // 
-            this.Mminus.Location = new System.Drawing.Point(399, 85);
+            resources.ApplyResources(this.Mminus, "Mminus");
             this.Mminus.Name = "Mminus";
-            this.Mminus.Size = new System.Drawing.Size(41, 31);
-            this.Mminus.TabIndex = 19;
-            this.Mminus.Text = "M-";
             this.Mminus.UseVisualStyleBackColor = true;
             this.Mminus.Click += new System.EventHandler(this.Mminus_Click);
             // 
             // Xor
             // 
-            this.Xor.Location = new System.Drawing.Point(118, 200);
+            resources.ApplyResources(this.Xor, "Xor");
             this.Xor.Name = "Xor";
-            this.Xor.Size = new System.Drawing.Size(41, 31);
-            this.Xor.TabIndex = 20;
-            this.Xor.Text = "Xor";
             this.Xor.UseVisualStyleBackColor = true;
             this.Xor.Click += new System.EventHandler(this.Xor_Click);
             // 
             // Ror
             // 
-            this.Ror.Location = new System.Drawing.Point(118, 163);
+            resources.ApplyResources(this.Ror, "Ror");
             this.Ror.Name = "Ror";
-            this.Ror.Size = new System.Drawing.Size(41, 31);
-            this.Ror.TabIndex = 21;
-            this.Ror.Text = "RoR";
             this.Ror.UseVisualStyleBackColor = true;
             this.Ror.Click += new System.EventHandler(this.Ror_Click);
             // 
             // B
             // 
-            this.B.Location = new System.Drawing.Point(165, 122);
+            resources.ApplyResources(this.B, "B");
+            this.B.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.B.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(156)))), ((int)(((byte)(173)))));
             this.B.Name = "B";
-            this.B.Size = new System.Drawing.Size(41, 31);
-            this.B.TabIndex = 22;
-            this.B.Text = "B";
-            this.B.UseVisualStyleBackColor = true;
+            this.B.UseVisualStyleBackColor = false;
+            this.B.Click += new System.EventHandler(this.B_Click);
             // 
             // Rsh
             // 
-            this.Rsh.Location = new System.Drawing.Point(118, 237);
+            resources.ApplyResources(this.Rsh, "Rsh");
             this.Rsh.Name = "Rsh";
-            this.Rsh.Size = new System.Drawing.Size(41, 31);
-            this.Rsh.TabIndex = 23;
-            this.Rsh.Text = "Rsh";
             this.Rsh.UseVisualStyleBackColor = true;
             this.Rsh.Click += new System.EventHandler(this.Rsh_Click);
             // 
             // And
             // 
-            this.And.Location = new System.Drawing.Point(118, 274);
+            resources.ApplyResources(this.And, "And");
             this.And.Name = "And";
-            this.And.Size = new System.Drawing.Size(41, 31);
-            this.And.TabIndex = 24;
-            this.And.Text = "And";
             this.And.UseVisualStyleBackColor = true;
             this.And.Click += new System.EventHandler(this.And_Click);
             // 
             // Pnawias
             // 
-            this.Pnawias.Location = new System.Drawing.Point(118, 122);
+            resources.ApplyResources(this.Pnawias, "Pnawias");
             this.Pnawias.Name = "Pnawias";
-            this.Pnawias.Size = new System.Drawing.Size(41, 31);
-            this.Pnawias.TabIndex = 25;
-            this.Pnawias.Text = ")";
             this.Pnawias.UseVisualStyleBackColor = true;
             // 
             // strzalka
             // 
-            this.strzalka.Location = new System.Drawing.Point(211, 122);
+            resources.ApplyResources(this.strzalka, "strzalka");
             this.strzalka.Name = "strzalka";
-            this.strzalka.Size = new System.Drawing.Size(41, 31);
-            this.strzalka.TabIndex = 26;
-            this.strzalka.Text = "<--";
             this.strzalka.UseVisualStyleBackColor = true;
             this.strzalka.Click += new System.EventHandler(this.strzalka_Click);
             // 
             // CE
             // 
-            this.CE.Location = new System.Drawing.Point(258, 122);
+            resources.ApplyResources(this.CE, "CE");
             this.CE.Name = "CE";
-            this.CE.Size = new System.Drawing.Size(41, 31);
-            this.CE.TabIndex = 27;
-            this.CE.Text = "CE";
             this.CE.UseVisualStyleBackColor = true;
             this.CE.Click += new System.EventHandler(this.CE_Click);
             // 
             // Clear
             // 
-            this.Clear.Location = new System.Drawing.Point(305, 122);
+            resources.ApplyResources(this.Clear, "Clear");
             this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(41, 31);
-            this.Clear.TabIndex = 28;
-            this.Clear.Text = "c";
             this.Clear.UseVisualStyleBackColor = true;
             this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
             // plusMinus
             // 
-            this.plusMinus.Location = new System.Drawing.Point(352, 122);
+            resources.ApplyResources(this.plusMinus, "plusMinus");
             this.plusMinus.Name = "plusMinus";
-            this.plusMinus.Size = new System.Drawing.Size(41, 31);
-            this.plusMinus.TabIndex = 29;
-            this.plusMinus.Text = "±";
             this.plusMinus.UseVisualStyleBackColor = true;
             this.plusMinus.Click += new System.EventHandler(this.plusMinus_Click);
             // 
             // pierwiastek
             // 
-            this.pierwiastek.Location = new System.Drawing.Point(399, 122);
+            resources.ApplyResources(this.pierwiastek, "pierwiastek");
             this.pierwiastek.Name = "pierwiastek";
-            this.pierwiastek.Size = new System.Drawing.Size(41, 31);
-            this.pierwiastek.TabIndex = 30;
-            this.pierwiastek.Text = "√";
             this.pierwiastek.UseVisualStyleBackColor = true;
             // 
             // D
             // 
-            this.D.Location = new System.Drawing.Point(165, 200);
+            resources.ApplyResources(this.D, "D");
             this.D.Name = "D";
-            this.D.Size = new System.Drawing.Size(41, 31);
-            this.D.TabIndex = 31;
-            this.D.Text = "D";
             this.D.UseVisualStyleBackColor = true;
+            this.D.Click += new System.EventHandler(this.D_Click);
             // 
             // E
             // 
-            this.E.Location = new System.Drawing.Point(164, 237);
+            resources.ApplyResources(this.E, "E");
             this.E.Name = "E";
-            this.E.Size = new System.Drawing.Size(41, 31);
-            this.E.TabIndex = 32;
-            this.E.Text = "E";
             this.E.UseVisualStyleBackColor = true;
+            this.E.Click += new System.EventHandler(this.E_Click);
             // 
             // F
             // 
-            this.F.Location = new System.Drawing.Point(164, 274);
+            resources.ApplyResources(this.F, "F");
             this.F.Name = "F";
-            this.F.Size = new System.Drawing.Size(41, 31);
-            this.F.TabIndex = 33;
-            this.F.Text = "F";
             this.F.UseVisualStyleBackColor = true;
+            this.F.Click += new System.EventHandler(this.F_Click);
             // 
             // procent
             // 
-            this.procent.Location = new System.Drawing.Point(399, 163);
+            resources.ApplyResources(this.procent, "procent");
             this.procent.Name = "procent";
-            this.procent.Size = new System.Drawing.Size(41, 31);
-            this.procent.TabIndex = 34;
-            this.procent.Text = "%";
             this.procent.UseVisualStyleBackColor = true;
             // 
             // C
             // 
-            this.C.Location = new System.Drawing.Point(165, 163);
+            resources.ApplyResources(this.C, "C");
             this.C.Name = "C";
-            this.C.Size = new System.Drawing.Size(41, 31);
-            this.C.TabIndex = 35;
-            this.C.Text = "C";
             this.C.UseVisualStyleBackColor = true;
+            this.C.Click += new System.EventHandler(this.C_Click);
             // 
             // siedem
             // 
-            this.siedem.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.siedem.Location = new System.Drawing.Point(211, 163);
+            resources.ApplyResources(this.siedem, "siedem");
+            this.siedem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(244)))), ((int)(((byte)(250)))));
+            this.siedem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(151)))), ((int)(((byte)(170)))));
+            this.siedem.FlatAppearance.BorderSize = 0;
+            this.siedem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(187)))), ((int)(((byte)(87)))));
+            this.siedem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(187)))), ((int)(((byte)(87)))));
             this.siedem.Name = "siedem";
-            this.siedem.Size = new System.Drawing.Size(41, 31);
-            this.siedem.TabIndex = 36;
-            this.siedem.Text = "7";
-            this.siedem.UseVisualStyleBackColor = true;
+            this.siedem.UseVisualStyleBackColor = false;
             this.siedem.Click += new System.EventHandler(this.siedem_Click);
             // 
             // osiem
             // 
+            resources.ApplyResources(this.osiem, "osiem");
             this.osiem.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.osiem.Location = new System.Drawing.Point(258, 163);
             this.osiem.Name = "osiem";
-            this.osiem.Size = new System.Drawing.Size(41, 31);
-            this.osiem.TabIndex = 37;
-            this.osiem.Text = "8";
             this.osiem.UseVisualStyleBackColor = true;
             this.osiem.Click += new System.EventHandler(this.osiem_Click);
             // 
             // dziewiec
             // 
+            resources.ApplyResources(this.dziewiec, "dziewiec");
             this.dziewiec.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dziewiec.FlatAppearance.BorderSize = 0;
             this.dziewiec.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(204)))), ((int)(((byte)(135)))));
             this.dziewiec.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(198)))));
-            this.dziewiec.Location = new System.Drawing.Point(305, 163);
             this.dziewiec.Name = "dziewiec";
-            this.dziewiec.Size = new System.Drawing.Size(41, 31);
-            this.dziewiec.TabIndex = 38;
-            this.dziewiec.Text = "9";
             this.dziewiec.UseVisualStyleBackColor = true;
             this.dziewiec.Click += new System.EventHandler(this.dziewiec_Click);
             // 
             // podzielic
             // 
-            this.podzielic.Location = new System.Drawing.Point(352, 163);
+            resources.ApplyResources(this.podzielic, "podzielic");
             this.podzielic.Name = "podzielic";
-            this.podzielic.Size = new System.Drawing.Size(41, 31);
-            this.podzielic.TabIndex = 39;
-            this.podzielic.Text = "/";
             this.podzielic.UseVisualStyleBackColor = true;
             this.podzielic.Click += new System.EventHandler(this.podzielic_Click);
             // 
             // cztery
             // 
-            this.cztery.Location = new System.Drawing.Point(212, 200);
+            resources.ApplyResources(this.cztery, "cztery");
             this.cztery.Name = "cztery";
-            this.cztery.Size = new System.Drawing.Size(41, 31);
-            this.cztery.TabIndex = 40;
-            this.cztery.Text = "4";
             this.cztery.UseVisualStyleBackColor = true;
             this.cztery.Click += new System.EventHandler(this.cztery_Click);
             // 
             // jeden
             // 
-            this.jeden.Location = new System.Drawing.Point(212, 237);
+            resources.ApplyResources(this.jeden, "jeden");
             this.jeden.Name = "jeden";
-            this.jeden.Size = new System.Drawing.Size(41, 31);
-            this.jeden.TabIndex = 41;
-            this.jeden.Text = "1";
             this.jeden.UseVisualStyleBackColor = true;
             this.jeden.Click += new System.EventHandler(this.jeden_Click);
             // 
             // zero
             // 
-            this.zero.Location = new System.Drawing.Point(211, 274);
+            resources.ApplyResources(this.zero, "zero");
             this.zero.Name = "zero";
-            this.zero.Size = new System.Drawing.Size(89, 31);
-            this.zero.TabIndex = 42;
-            this.zero.Text = "0";
             this.zero.UseVisualStyleBackColor = true;
             this.zero.Click += new System.EventHandler(this.zero_Click);
             // 
             // piec
             // 
-            this.piec.Location = new System.Drawing.Point(259, 200);
+            resources.ApplyResources(this.piec, "piec");
             this.piec.Name = "piec";
-            this.piec.Size = new System.Drawing.Size(41, 31);
-            this.piec.TabIndex = 43;
-            this.piec.Text = "5";
             this.piec.UseVisualStyleBackColor = true;
             this.piec.Click += new System.EventHandler(this.piec_Click);
             // 
             // dwa
             // 
-            this.dwa.Location = new System.Drawing.Point(258, 237);
+            resources.ApplyResources(this.dwa, "dwa");
             this.dwa.Name = "dwa";
-            this.dwa.Size = new System.Drawing.Size(41, 31);
-            this.dwa.TabIndex = 44;
-            this.dwa.Text = "2";
             this.dwa.UseVisualStyleBackColor = true;
             this.dwa.Click += new System.EventHandler(this.dwa_Click);
             // 
             // szesc
             // 
-            this.szesc.Location = new System.Drawing.Point(305, 200);
+            resources.ApplyResources(this.szesc, "szesc");
             this.szesc.Name = "szesc";
-            this.szesc.Size = new System.Drawing.Size(41, 31);
-            this.szesc.TabIndex = 46;
-            this.szesc.Text = "6";
             this.szesc.UseVisualStyleBackColor = true;
             this.szesc.Click += new System.EventHandler(this.szesc_Click);
             // 
             // trzy
             // 
-            this.trzy.Location = new System.Drawing.Point(305, 237);
+            resources.ApplyResources(this.trzy, "trzy");
             this.trzy.Name = "trzy";
-            this.trzy.Size = new System.Drawing.Size(41, 31);
-            this.trzy.TabIndex = 47;
-            this.trzy.Text = "3";
             this.trzy.UseVisualStyleBackColor = true;
             this.trzy.Click += new System.EventHandler(this.trzy_Click);
             // 
             // przecinek
             // 
-            this.przecinek.Location = new System.Drawing.Point(305, 274);
+            resources.ApplyResources(this.przecinek, "przecinek");
             this.przecinek.Name = "przecinek";
-            this.przecinek.Size = new System.Drawing.Size(41, 31);
-            this.przecinek.TabIndex = 48;
-            this.przecinek.Text = ",";
             this.przecinek.UseVisualStyleBackColor = true;
             // 
             // razy
             // 
-            this.razy.Location = new System.Drawing.Point(352, 200);
+            resources.ApplyResources(this.razy, "razy");
             this.razy.Name = "razy";
-            this.razy.Size = new System.Drawing.Size(41, 31);
-            this.razy.TabIndex = 49;
-            this.razy.Text = "*";
             this.razy.UseVisualStyleBackColor = true;
             this.razy.Click += new System.EventHandler(this.razy_Click);
             // 
             // minus
             // 
-            this.minus.Location = new System.Drawing.Point(352, 237);
+            resources.ApplyResources(this.minus, "minus");
             this.minus.Name = "minus";
-            this.minus.Size = new System.Drawing.Size(41, 31);
-            this.minus.TabIndex = 50;
-            this.minus.Text = "-";
             this.minus.UseVisualStyleBackColor = true;
             this.minus.Click += new System.EventHandler(this.minus_Click);
             // 
             // plus
             // 
-            this.plus.Location = new System.Drawing.Point(352, 274);
+            resources.ApplyResources(this.plus, "plus");
             this.plus.Name = "plus";
-            this.plus.Size = new System.Drawing.Size(41, 31);
-            this.plus.TabIndex = 51;
-            this.plus.Text = "+";
             this.plus.UseVisualStyleBackColor = true;
             this.plus.Click += new System.EventHandler(this.plus_Click);
             // 
             // ulamek
             // 
-            this.ulamek.Location = new System.Drawing.Point(399, 200);
+            resources.ApplyResources(this.ulamek, "ulamek");
             this.ulamek.Name = "ulamek";
-            this.ulamek.Size = new System.Drawing.Size(41, 31);
-            this.ulamek.TabIndex = 52;
-            this.ulamek.Text = "1/x";
             this.ulamek.UseVisualStyleBackColor = true;
             // 
             // rownosc
             // 
-            this.rownosc.Location = new System.Drawing.Point(399, 237);
+            resources.ApplyResources(this.rownosc, "rownosc");
             this.rownosc.Name = "rownosc";
-            this.rownosc.Size = new System.Drawing.Size(41, 68);
-            this.rownosc.TabIndex = 53;
-            this.rownosc.Text = "=";
             this.rownosc.UseVisualStyleBackColor = true;
             this.rownosc.Click += new System.EventHandler(this.rownosc_Click);
             // 
             // BIN
             // 
-            this.BIN.AutoSize = true;
-            this.BIN.Location = new System.Drawing.Point(4, 19);
+            resources.ApplyResources(this.BIN, "BIN");
             this.BIN.Name = "BIN";
-            this.BIN.Size = new System.Drawing.Size(43, 17);
-            this.BIN.TabIndex = 54;
             this.BIN.TabStop = true;
-            this.BIN.Text = "BIN";
             this.BIN.UseVisualStyleBackColor = true;
             this.BIN.CheckedChanged += new System.EventHandler(this.BIN_CheckedChanged);
             // 
             // OCT
             // 
-            this.OCT.AutoSize = true;
-            this.OCT.Location = new System.Drawing.Point(4, 40);
+            resources.ApplyResources(this.OCT, "OCT");
             this.OCT.Name = "OCT";
-            this.OCT.Size = new System.Drawing.Size(47, 17);
-            this.OCT.TabIndex = 55;
             this.OCT.TabStop = true;
-            this.OCT.Text = "OCT";
             this.OCT.UseVisualStyleBackColor = true;
             this.OCT.CheckedChanged += new System.EventHandler(this.OCT_CheckedChanged);
             // 
             // DEC
             // 
-            this.DEC.AutoSize = true;
-            this.DEC.Location = new System.Drawing.Point(4, 61);
+            resources.ApplyResources(this.DEC, "DEC");
             this.DEC.Name = "DEC";
-            this.DEC.Size = new System.Drawing.Size(47, 17);
-            this.DEC.TabIndex = 56;
             this.DEC.TabStop = true;
-            this.DEC.Text = "DEC";
             this.DEC.UseVisualStyleBackColor = true;
             this.DEC.CheckedChanged += new System.EventHandler(this.DEC_CheckedChanged);
             // 
             // HEX
             // 
-            this.HEX.AutoSize = true;
-            this.HEX.Location = new System.Drawing.Point(4, 82);
+            resources.ApplyResources(this.HEX, "HEX");
             this.HEX.Name = "HEX";
-            this.HEX.Size = new System.Drawing.Size(47, 17);
-            this.HEX.TabIndex = 57;
             this.HEX.TabStop = true;
-            this.HEX.Text = "HEX";
             this.HEX.UseVisualStyleBackColor = true;
             this.HEX.CheckedChanged += new System.EventHandler(this.HEX_CheckedChanged);
             // 
-            // radioButton5
+            // Qword
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.radioButton5.Location = new System.Drawing.Point(4, 8);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(55, 13);
-            this.radioButton5.TabIndex = 58;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "QWORD";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.Qword, "Qword");
+            this.Qword.Name = "Qword";
+            this.Qword.TabStop = true;
+            this.Qword.UseVisualStyleBackColor = true;
+            this.Qword.CheckedChanged += new System.EventHandler(this.qword_CheckedChanged);
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.BIN);
             this.groupBox1.Controls.Add(this.OCT);
             this.groupBox1.Controls.Add(this.HEX);
             this.groupBox1.Controls.Add(this.DEC);
-            this.groupBox1.Location = new System.Drawing.Point(12, 88);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(56, 111);
-            this.groupBox1.TabIndex = 59;
             this.groupBox1.TabStop = false;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton8);
-            this.groupBox2.Controls.Add(this.radioButton7);
-            this.groupBox2.Controls.Add(this.radioButton6);
-            this.groupBox2.Controls.Add(this.radioButton5);
-            this.groupBox2.Location = new System.Drawing.Point(12, 200);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Controls.Add(this.bajt_btn);
+            this.groupBox2.Controls.Add(this.word_btn);
+            this.groupBox2.Controls.Add(this.dword_btn);
+            this.groupBox2.Controls.Add(this.Qword);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(56, 111);
-            this.groupBox2.TabIndex = 60;
             this.groupBox2.TabStop = false;
             // 
-            // radioButton8
+            // bajt_btn
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.radioButton8.Location = new System.Drawing.Point(4, 83);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(46, 16);
-            this.radioButton8.TabIndex = 61;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "BAJT";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.bajt_btn, "bajt_btn");
+            this.bajt_btn.Name = "bajt_btn";
+            this.bajt_btn.TabStop = true;
+            this.bajt_btn.UseVisualStyleBackColor = true;
+            this.bajt_btn.CheckedChanged += new System.EventHandler(this.bajt_btn_CheckedChanged);
             // 
-            // radioButton7
+            // word_btn
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.radioButton7.Location = new System.Drawing.Point(4, 58);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(53, 16);
-            this.radioButton7.TabIndex = 60;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "WORD";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.word_btn, "word_btn");
+            this.word_btn.Name = "word_btn";
+            this.word_btn.TabStop = true;
+            this.word_btn.UseVisualStyleBackColor = true;
+            this.word_btn.CheckedChanged += new System.EventHandler(this.word_btn_CheckedChanged);
             // 
-            // radioButton6
+            // dword_btn
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.radioButton6.Location = new System.Drawing.Point(4, 33);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(55, 13);
-            this.radioButton6.TabIndex = 59;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "DWORD";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.dword_btn, "dword_btn");
+            this.dword_btn.Name = "dword_btn";
+            this.dword_btn.TabStop = true;
+            this.dword_btn.UseVisualStyleBackColor = true;
+            this.dword_btn.CheckedChanged += new System.EventHandler(this.dword_CheckedChanged);
             // 
-            // button9
+            // blank_button
             // 
-            this.button9.Location = new System.Drawing.Point(71, 85);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(41, 31);
-            this.button9.TabIndex = 61;
-            this.button9.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.blank_button, "blank_button");
+            this.blank_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(228)))), ((int)(((byte)(241)))));
+            this.blank_button.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.blank_button.Name = "blank_button";
+            this.blank_button.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(445, 312);
-            this.Controls.Add(this.button9);
+            resources.ApplyResources(this, "$this");
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(228)))), ((int)(((byte)(241)))));
+            this.Controls.Add(this.blank_button);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.rownosc);
@@ -749,9 +595,8 @@ namespace Calculator
             this.Controls.Add(this.Lnawias);
             this.Controls.Add(this.textBox2);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.MaximumSize = new System.Drawing.Size(461, 351);
-            this.MinimumSize = new System.Drawing.Size(461, 351);
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -823,13 +668,13 @@ namespace Calculator
         private RadioButton OCT;
         private RadioButton DEC;
         private RadioButton HEX;
-        private RadioButton radioButton5;
+        private RadioButton Qword;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
-        private RadioButton radioButton7;
-        private RadioButton radioButton6;
-        private RadioButton radioButton8;
-        private Button button9;
+        private RadioButton word_btn;
+        private RadioButton dword_btn;
+        private RadioButton bajt_btn;
+        private Button blank_button;
     }
 }
 
