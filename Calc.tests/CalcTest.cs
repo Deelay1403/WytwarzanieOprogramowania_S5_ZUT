@@ -184,5 +184,26 @@ namespace CalcTest
         {
             Assert.AreEqual(0, Calc.C());
         }
+        [TestMethod]
+        public void MplusTest()
+        {
+            long temp = 10;
+            Calc.Mplus(5, ref temp);
+            Assert.AreEqual(15, temp);
+        }
+        [TestMethod]
+        public void MminusTest()
+        {
+            long temp = 15;
+            Calc.Mminus(6, ref temp);
+            Assert.AreEqual(9, temp);
+        }
+        [TestMethod]
+        public void MCtest()
+        {
+            long temp = 10;
+            Calc.MC(ref temp);
+            Assert.AreEqual(0, temp);
+        }
     }
 }
